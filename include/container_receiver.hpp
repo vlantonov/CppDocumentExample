@@ -4,6 +4,10 @@
 
 #include "receiver.hpp"
 
+///
+/// @brief Implements multiple element storage.
+/// Container stores multiple ordered unique elements
+///
 class ContainerReceiver : public Receiver {
  public:
   ~ContainerReceiver() override = default;
@@ -14,5 +18,6 @@ class ContainerReceiver : public Receiver {
   bool update(const Element& aUpdated) override;
   bool remove(const Element& aRemoved) override;
 
+  /// @brief Elements container
   std::set<Element> mContainer;
 };

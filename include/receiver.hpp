@@ -5,6 +5,11 @@
 
 class Element;
 
+///
+/// @brief Interface to business logic
+/// Methods are to perform all kinds of operations,
+/// associated with carrying out a request.
+///
 class Receiver {
  public:
   virtual ~Receiver() = default;

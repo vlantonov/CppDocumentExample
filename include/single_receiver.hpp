@@ -5,6 +5,9 @@
 #include "element.hpp"
 #include "receiver.hpp"
 
+///
+/// @brief Implements single element storage.
+///
 class SingleReceiver : public Receiver {
  public:
   ~SingleReceiver() override = default;

@@ -1,6 +1,10 @@
 # CppDocumentExample
 C++ code documentation example
 
+## Command Pattern References
+* [refactoring.guru:Command](https://refactoring.guru/design-patterns/command/)
+* [Command Design Pattern](https://sourcemaking.com/design_patterns/command)
+
 ## Technical References
 * [The Copy-and-Swap Idiom](https://www.modernescpp.com/index.php/the-copy-and-swap-idiom/)
 * [What std::exchange does, and how to remember it](https://www.fluentcpp.com/2020/09/18/what-stdexchange-does-and-how-to-remember-it/)

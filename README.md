@@ -17,7 +17,7 @@ doxygen ./doc/Doxyfile
 * Optional one line description of the project: `PROJECT_BRIEF = "..."`
 * Disable LaTeX output: `GENERATE_LATEX = NO`
 * Directory to put the HTML docs `OUTPUT_DIRECTORY = ./html/`
-* Files and/or directories that contain documented source files: `INPUT = ./src ./include`
+* Files and/or directories that contain documented source files: `INPUT = ../include ../src`
 * Reuse documentation for the group: `DISTRIBUTE_GROUP_DOC = YES`
 * Show public members of class: `EXTRACT_ALL = YES`
 * Search subdirectories for input files: `RECURSIVE = YES`
@@ -66,6 +66,7 @@ doxygen ./doc/Doxyfile
 * [Creating a visualization of a C++ project with doxygen](http://web.evolbio.mpg.de/~boettcher//other/2016/creating_source_graph.html)
 * [Learn how to use doxygen](http://www.whatimade.today/learn-how-to-use-doxygen/)
 * [CPP / C++ Notes - Doxygen - Documentation Generator](https://caiorss.github.io/C-Cpp-Notes/Doxygen-documentation.html)
+* [Doxygen for C++ projects](https://www.codementor.io/@sisco0/doxygen-for-c-projects-15o4chhkad)
 
 ## Command Pattern References
 * [refactoring.guru:Command](https://refactoring.guru/design-patterns/command/)

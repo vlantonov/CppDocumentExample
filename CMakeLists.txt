@@ -2,6 +2,26 @@ cmake_minimum_required(VERSION 3.20)
 
 project(CppProjectSample LANGUAGES CXX)
 
+find_package(Doxygen REQUIRED dot)
+
+set(DOXYGEN_PROJECT_NAME          "C++ Document Example")
+set(DOXYGEN_PROJECT_BRIEF         "Simple example about how to create C++ project documentation with Doxygen")
+set(DOXYGEN_OUTPUT_DIRECTORY      ${PROJECT_BINARY_DIR}/cmake_generated)
+set(DOXYGEN_DISTRIBUTE_GROUP_DOC  YES)
+set(DOXYGEN_EXTRACT_PRIVATE       YES)
+set(DOXYGEN_EXTRACT_PRIV_VIRTUAL  YES)
+set(DOXYGEN_EXTRACT_STATIC        YES)
+set(DOXYGEN_GENERATE_HTML         YES)
+set(DOXYGEN_GENERATE_LATEX        NO)
+set(DOXYGEN_INPUT                 "../include ../src")
+set(DOXYGEN_RECURSIVE             YES)
+set(DOXYGEN_GENERATE_LATEX        NO)
+
+doxygen_add_docs(docs_target
+  ${PROJECT_SOURCE_DIR}
+  COMMENT "Generate documentation"
+)
+
 add_executable(
     ${PROJECT_NAME}
     include/element.hpp

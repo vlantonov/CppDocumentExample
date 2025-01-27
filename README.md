@@ -61,6 +61,20 @@ doxygen ./doc/Doxyfile
 * Include functions body to the generated HTML's: `INLINE_SOURCES = YES`
 * Specify files/folders with example code: `EXAMPLE_PATH = "..."`
 
+## Doxygen CMake target
+```bash
+find_package(Doxygen REQUIRED dot)
+
+set(DOXYGEN_PROJECT_NAME          "C++ Document Example")
+# Other Doxygen options
+
+doxygen_add_docs(docs_target
+  ${PROJECT_SOURCE_DIR}
+  COMMENT "Generate documentation"
+)
+```
+* [FindDoxygen](https://cmake.org/cmake/help/v3.20/module/FindDoxygen.html)
+
 ## Doxygen C++ examples
 * [How to configure Doxygen for C++ code](https://codeyarns.com/tech/2014-06-18-how-to-configure-doxygen-for-c-code.html#gsc.tab=0)
 * [Creating a visualization of a C++ project with doxygen](http://web.evolbio.mpg.de/~boettcher//other/2016/creating_source_graph.html)

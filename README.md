@@ -75,6 +75,8 @@ doxygen_add_docs(docs_target
 ```
 * Documentation can be created without compiling the project: `make docs_target`
 * [FindDoxygen](https://cmake.org/cmake/help/v3.20/module/FindDoxygen.html)
+* [Quick setup to use Doxygen with CMake](https://vicrucann.github.io/tutorials/quick-cmake-doxygen/)
+* [Build doxygen from CMake script](https://stackoverflow.com/questions/34878276/build-doxygen-from-cmake-script)
 
 ## Doxygen C++ examples
 * [How to configure Doxygen for C++ code](https://codeyarns.com/tech/2014-06-18-how-to-configure-doxygen-for-c-code.html#gsc.tab=0)

@@ -13,7 +13,6 @@ set(DOXYGEN_EXTRACT_PRIV_VIRTUAL  YES)
 set(DOXYGEN_EXTRACT_STATIC        YES)
 set(DOXYGEN_GENERATE_HTML         YES)
 set(DOXYGEN_GENERATE_LATEX        NO)
-set(DOXYGEN_INPUT                 "../include ../src")
 set(DOXYGEN_RECURSIVE             YES)
 set(DOXYGEN_GENERATE_LATEX        NO)
 

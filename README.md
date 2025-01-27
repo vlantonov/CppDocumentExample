@@ -73,6 +73,7 @@ doxygen_add_docs(docs_target
   COMMENT "Generate documentation"
 )
 ```
+* Documentation can be created without compiling the project: `make docs_target`
 * [FindDoxygen](https://cmake.org/cmake/help/v3.20/module/FindDoxygen.html)
 
 ## Doxygen C++ examples

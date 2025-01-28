@@ -78,6 +78,15 @@ doxygen_add_docs(docs_target
 * [Quick setup to use Doxygen with CMake](https://vicrucann.github.io/tutorials/quick-cmake-doxygen/)
 * [Build doxygen from CMake script](https://stackoverflow.com/questions/34878276/build-doxygen-from-cmake-script)
 
+## Publish with GitHub action
+* Create the github action: `.github/workflows/doxygen_publish.yml`
+* Go to `Settings -> Actions -> General -> Workflow` and set `Read and write permissions`
+* Setup [GitHub Pages](https://docs.github.com/en/pages/quickstart)
+* Go to `Settings -> Pages`
+* Set `Build and deployment` to `Deploy from a branch`
+* Set `Branch` to `gh-pages` and `/(root)`
+* Resulting site is <https://vlantonov.github.io/CppDocumentExample/> 
+
 ## Doxygen C++ examples
 * [How to configure Doxygen for C++ code](https://codeyarns.com/tech/2014-06-18-how-to-configure-doxygen-for-c-code.html#gsc.tab=0)
 * [Creating a visualization of a C++ project with doxygen](http://web.evolbio.mpg.de/~boettcher//other/2016/creating_source_graph.html)

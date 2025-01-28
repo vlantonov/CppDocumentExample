@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classReceiver.html" title="Interface to business logic Methods are to perform all kinds of operations, associated with carrying ..." alt="" coords="5,31,84,56"/>
+<area shape="rect" id="Node000001" href="$classContainerReceiver.html" title="Implements multiple element storage. Container stores multiple ordered unique elements." alt="" coords="132,5,275,31"/>
+<area shape="poly" id="edge5_Node000000_Node000001" title=" " alt="" coords="97,32,132,27,132,32,98,38"/>
+<area shape="rect" id="Node000002" href="$classSingleReceiver.html" title="Implements single element storage." alt="" coords="144,55,263,80"/>
+<area shape="poly" id="edge6_Node000000_Node000002" title=" " alt="" coords="98,49,144,56,143,61,97,54"/>
+</map>

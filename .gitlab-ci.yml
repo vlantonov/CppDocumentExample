@@ -15,7 +15,7 @@ build-documentation:
 
 pages:
   dependencies:
-    - build-debug-job
+    - build-documentation
   script:
   - mv build/cmake_generated/html/ public/
   artifacts:

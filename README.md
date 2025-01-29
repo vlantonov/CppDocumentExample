@@ -90,7 +90,8 @@ doxygen_add_docs(docs_target
 ## Publish with Gitlab Pages
 * Follow the steps in [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
 * Setup the pipeline in `.gitlab-ci.yml` as shown here
-* Go to `Pages` section and untick the `Use unique domain`
+* Go to `Deploy > Pages` section and untick the `Use unique domain`
+* Go to `Settings > General > Visibility` and select `Everyone` in pages section.
 * Resulting site is <https://vladiant.gitlab.io/CppDocumentExample/>
 
 ## Doxygen C++ examples

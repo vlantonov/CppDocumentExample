@@ -85,7 +85,13 @@ doxygen_add_docs(docs_target
 * Go to `Settings -> Pages`
 * Set `Build and deployment` to `Deploy from a branch`
 * Set `Branch` to `gh-pages` and `/(root)`
-* Resulting site is <https://vlantonov.github.io/CppDocumentExample/> 
+* Resulting site is <https://vlantonov.github.io/CppDocumentExample/>
+
+## Publish with Gitlab Pages
+* Follow the steps in [GitLab Pages](https://docs.gitlab.com/ee/user/project/pages/)
+* Setup the pipeline in `.gitlab-ci.yml` as shown here
+* Go to `Pages` section and untick the `Use unique domain`
+* Resulting site is <https://vladiant.gitlab.io/CppDocumentExample/>
 
 ## Doxygen C++ examples
 * [How to configure Doxygen for C++ code](https://codeyarns.com/tech/2014-06-18-how-to-configure-doxygen-for-c-code.html#gsc.tab=0)

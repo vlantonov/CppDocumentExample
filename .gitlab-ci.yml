@@ -1,0 +1,25 @@
+# The Docker image that will be used to build your app
+image: ubuntu:noble
+
+build-documentation:
+  before_script:
+    - apt update
+    - apt install -y cmake doxygen graphviz
+  script:
+    - echo "Rendering HTML..."
+    - mkdir build
+    - cd build
+    - cmake ..
+    - cmake --build . --target docs_target
+
+pages:
+  script:
+  - mv build/cmake_generated/html/ public/
+  artifacts:
+    paths:
+    - public
+  rules:
+    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+ 
+

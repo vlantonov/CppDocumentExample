@@ -12,6 +12,10 @@ build-documentation:
     - cd build
     - cmake ..
     - cmake --build . --target docs_target
+  artifacts:
+      paths:
+        - build/cmake_generated/html/
+
 
 pages:
   dependencies:

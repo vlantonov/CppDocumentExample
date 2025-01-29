@@ -1,7 +1,11 @@
 # The Docker image that will be used to build your app
 
+stages:
+  - build
+  - deploy
 
 build-documentation:
+  stage: build
   image: ubuntu:noble
   before_script:
     - apt update
@@ -18,6 +22,7 @@ build-documentation:
 
 
 pages:
+  stage: deploy
   dependencies:
     - build-documentation
   script:

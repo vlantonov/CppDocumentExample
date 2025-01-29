@@ -1,10 +1,11 @@
 # The Docker image that will be used to build your app
-image: ubuntu:noble
+
 
 build-documentation:
+  image: ubuntu:noble
   before_script:
     - apt update
-    - apt install -y cmake doxygen graphviz
+    - apt install -y build-essential cmake doxygen graphviz
   script:
     - echo "Rendering HTML..."
     - mkdir build
@@ -13,6 +14,8 @@ build-documentation:
     - cmake --build . --target docs_target
 
 pages:
+  dependencies:
+    - build-debug-job
   script:
   - mv build/cmake_generated/html/ public/
   artifacts:

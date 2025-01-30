@@ -15,6 +15,7 @@ set(DOXYGEN_GENERATE_HTML         YES)
 set(DOXYGEN_GENERATE_LATEX        NO)
 set(DOXYGEN_RECURSIVE             YES)
 set(DOXYGEN_GENERATE_LATEX        NO)
+set(DOXYGEN_USE_MDFILE_AS_MAINPAGE README.md)
 
 doxygen_add_docs(docs_target
   ${PROJECT_SOURCE_DIR}

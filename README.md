@@ -104,6 +104,9 @@ doxygen_add_docs(docs_target
 ## Command Pattern References
 * [refactoring.guru:Command](https://refactoring.guru/design-patterns/command/)
 * [Command Design Pattern](https://sourcemaking.com/design_patterns/command)
+* [What Is CRUD (Create, Read, Update, and Delete)?](https://celerdata.com/glossary/create-read-update-and-delete-crud)
+* [Repository Design Pattern](https://www.geeksforgeeks.org/repository-design-pattern/)
+* [Repository Pattern](https://deviq.com/design-patterns/repository-pattern)
 
 ## Technical References
 * [The Copy-and-Swap Idiom](https://www.modernescpp.com/index.php/the-copy-and-swap-idiom/)

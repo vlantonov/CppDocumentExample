@@ -28,10 +28,11 @@ class Element {
   explicit Element(std::string_view aData);
 
   ///
-  /// @brief Destructor 
-  /// 
+  /// @brief Destructor
+  ///
   /// Consider using the default one
-  /// Should be defined if a class needs an explicit action at object destruction
+  /// Should be defined if a class needs an explicit action at object
+  /// destruction
   ~Element() noexcept;
 
   ///
@@ -67,16 +68,19 @@ class Element {
   /// Consider using the default.
   /// Should be noexcept.
   ///
-  /// (Separated paragraph by empty line) Should be consistent to move constructor.
+  /// (Separated paragraph by empty line) Should be consistent to move
+  /// constructor.
   /// @param aOther Object to move
-  /// @return 
+  /// @return
   Element& operator=(Element&& aOther) noexcept;
 
   ///
   /// @brief Define default comparison
   ///
   /// Spaceship operator is used:
-  /// <a href="https://en.cppreference.com/w/cpp/language/default_comparisons">Default comparisons</a> 
+  /// <a
+  /// href="https://en.cppreference.com/w/cpp/language/default_comparisons">Default
+  /// comparisons</a>
   auto operator<=>(const Element&) const = default;
 
   ///

@@ -13,6 +13,7 @@
 /// * The arguments to be passed when the method is applied.
 ///
 /// Commands can delegate to any methods of a receiver.
+/// Command normally specifies a sender-receiver connection with a subclass.
 /// @see Receiver
 class Command {
  public:

@@ -88,7 +88,7 @@ Inheritance diagram for ContainerReceiver:</div>
 <div class="center"><img src="classContainerReceiver__inherit__graph.png" border="0" usemap="#aContainerReceiver_inherit__map" alt="Inheritance graph"/></div>
 <map name="aContainerReceiver_inherit__map" id="aContainerReceiver_inherit__map">
 <area shape="rect" title="Implements multiple element storage. Container stores multiple ordered unique elements." alt="" coords="5,79,148,104"/>
-<area shape="rect" href="classReceiver.html" title="Interface to business logic Methods are to perform all kinds of operations, associated with carrying ..." alt="" coords="37,5,116,31"/>
+<area shape="rect" href="classReceiver.html" title="Interface to business logic." alt="" coords="37,5,116,31"/>
 <area shape="poly" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -98,7 +98,7 @@ Collaboration diagram for ContainerReceiver:</div>
 <div class="center"><img src="classContainerReceiver__coll__graph.png" border="0" usemap="#aContainerReceiver_coll__map" alt="Collaboration graph"/></div>
 <map name="aContainerReceiver_coll__map" id="aContainerReceiver_coll__map">
 <area shape="rect" title="Implements multiple element storage. Container stores multiple ordered unique elements." alt="" coords="5,79,148,104"/>
-<area shape="rect" href="classReceiver.html" title="Interface to business logic Methods are to perform all kinds of operations, associated with carrying ..." alt="" coords="37,5,116,31"/>
+<area shape="rect" href="classReceiver.html" title="Interface to business logic." alt="" coords="37,5,116,31"/>
 <area shape="poly" title=" " alt="" coords="79,44,79,79,74,79,74,44"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -106,12 +106,16 @@ Collaboration diagram for ContainerReceiver:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:ab53c9dfcef2fc9816a2522d9300f50f0" id="r_ab53c9dfcef2fc9816a2522d9300f50f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContainerReceiver.html#ab53c9dfcef2fc9816a2522d9300f50f0">create</a> (std::string_view aData) override</td></tr>
+<tr class="memdesc:ab53c9dfcef2fc9816a2522d9300f50f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create action.  <br /></td></tr>
 <tr class="separator:ab53c9dfcef2fc9816a2522d9300f50f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e03d0a242e044a43d3b8ff4df2c898d" id="r_a1e03d0a242e044a43d3b8ff4df2c898d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classElement.html">Element</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContainerReceiver.html#a1e03d0a242e044a43d3b8ff4df2c898d">read</a> () override</td></tr>
+<tr class="memdesc:a1e03d0a242e044a43d3b8ff4df2c898d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read action.  <br /></td></tr>
 <tr class="separator:a1e03d0a242e044a43d3b8ff4df2c898d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61b809bbc9abc5e9351e030cdfd73a1d" id="r_a61b809bbc9abc5e9351e030cdfd73a1d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContainerReceiver.html#a61b809bbc9abc5e9351e030cdfd73a1d">update</a> (const <a class="el" href="classElement.html">Element</a> &amp;aUpdated) override</td></tr>
+<tr class="memdesc:a61b809bbc9abc5e9351e030cdfd73a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update action.  <br /></td></tr>
 <tr class="separator:a61b809bbc9abc5e9351e030cdfd73a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362023e8172ef1d26da3060551aa2d63" id="r_a362023e8172ef1d26da3060551aa2d63"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classContainerReceiver.html#a362023e8172ef1d26da3060551aa2d63">remove</a> (const <a class="el" href="classElement.html">Element</a> &amp;aRemoved) override</td></tr>
+<tr class="memdesc:a362023e8172ef1d26da3060551aa2d63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove action.  <br /></td></tr>
 <tr class="separator:a362023e8172ef1d26da3060551aa2d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
@@ -151,7 +155,17 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classReceiver.html">Receiver</a>.</p>
+<p>Create action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aData</td><td>Identifier of an <a class="el" href="classElement.html" title="Example element.">Element</a> to be created </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classElement.html" title="Example element.">Element</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if element is successfully created </dd></dl>
+
+<p>Implements <a class="el" href="classReceiver.html#acf066842526dda0c12b593eeefc83693">Receiver</a>.</p>
 
 </div>
 </div>
@@ -178,7 +192,10 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classReceiver.html">Receiver</a>.</p>
+<p>Read action. </p>
+<dl class="section return"><dt>Returns</dt><dd>Read elements </dd></dl>
+
+<p>Implements <a class="el" href="classReceiver.html#ab3c99306cf908247cc080bffdcf4ac1d">Receiver</a>.</p>
 
 </div>
 </div>
@@ -206,7 +223,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classReceiver.html">Receiver</a>.</p>
+<p>Remove action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aRemoved</td><td><a class="el" href="classElement.html" title="Example element.">Element</a> to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if element is successfully removed </dd></dl>
+
+<p>Implements <a class="el" href="classReceiver.html#ad961aa8cafd90c8eec021b821f72d9e6">Receiver</a>.</p>
 
 </div>
 </div>
@@ -234,7 +260,16 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classReceiver.html">Receiver</a>.</p>
+<p>Update action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aUpdated</td><td><a class="el" href="classElement.html" title="Example element.">Element</a> to be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if element is successfully updated </dd></dl>
+
+<p>Implements <a class="el" href="classReceiver.html#a931343e2f17ee18a771adc808efad464">Receiver</a>.</p>
 
 </div>
 </div>

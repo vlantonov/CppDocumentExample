@@ -78,16 +78,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Sends requests to commands Can be associated with one or several commands. Does not depend on concrete command or receiver classes. The request is passed to a receiver indirectly, by executing a command.  
+<p>Sends requests to commands.  
  <a href="classInvoker.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="invoker_8hpp_source.html">invoker.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac05a4d33676754b598fc868a25ac9ee2" id="r_ac05a4d33676754b598fc868a25ac9ee2"><td class="memItemLeft" align="right" valign="top"><a id="ac05a4d33676754b598fc868a25ac9ee2" name="ac05a4d33676754b598fc868a25ac9ee2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addCommand</b> (std::shared_ptr&lt; <a class="el" href="classCommand.html">Command</a> &gt; command)</td></tr>
-<tr class="memdesc:ac05a4d33676754b598fc868a25ac9ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add command to be executed. The client code can parameterize by adding any commands. <br /></td></tr>
+<tr class="memitem:ac05a4d33676754b598fc868a25ac9ee2" id="r_ac05a4d33676754b598fc868a25ac9ee2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInvoker.html#ac05a4d33676754b598fc868a25ac9ee2">addCommand</a> (std::shared_ptr&lt; <a class="el" href="classCommand.html">Command</a> &gt; command)</td></tr>
+<tr class="memdesc:ac05a4d33676754b598fc868a25ac9ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add command to be executed.  <br /></td></tr>
 <tr class="separator:ac05a4d33676754b598fc868a25ac9ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab18ed95c8456fbd32c24ab2613c88fd9" id="r_ab18ed95c8456fbd32c24ab2613c88fd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInvoker.html#ab18ed95c8456fbd32c24ab2613c88fd9">executeCommands</a> ()</td></tr>
 <tr class="memdesc:ab18ed95c8456fbd32c24ab2613c88fd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes added commands.  <br /></td></tr>
@@ -97,11 +96,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>addCommand</b> (std::
 Private Attributes</h2></td></tr>
 <tr class="memitem:af4ba4c68d2e4018f9850f07bdc9f6d74" id="r_af4ba4c68d2e4018f9850f07bdc9f6d74"><td class="memItemLeft" align="right" valign="top"><a id="af4ba4c68d2e4018f9850f07bdc9f6d74" name="af4ba4c68d2e4018f9850f07bdc9f6d74"></a>
 std::vector&lt; std::shared_ptr&lt; <a class="el" href="classCommand.html">Command</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>commands</b></td></tr>
+<tr class="memdesc:af4ba4c68d2e4018f9850f07bdc9f6d74"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of commands to be executed. <br /></td></tr>
 <tr class="separator:af4ba4c68d2e4018f9850f07bdc9f6d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Sends requests to commands Can be associated with one or several commands. Does not depend on concrete command or receiver classes. The request is passed to a receiver indirectly, by executing a command. </p>
+<div class="textblock"><p>Sends requests to commands. </p>
+<p>Can be associated with one or several commands. Does not depend on concrete command or receiver classes. The request is passed to a receiver indirectly, by executing a command. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReceiver.html" title="Interface to business logic.">Receiver</a> , <a class="el" href="classCommand.html" title="Interface of method for command execution.">Command</a> </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac05a4d33676754b598fc868a25ac9ee2" name="ac05a4d33676754b598fc868a25ac9ee2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac05a4d33676754b598fc868a25ac9ee2">&#9670;&#160;</a></span>addCommand()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Invoker::addCommand </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="classCommand.html">Command</a> &gt;&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add command to be executed. </p>
+<p>The client code can be parameterized by adding any commands. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">command</td><td><a class="el" href="classCommand.html" title="Interface of method for command execution.">Command</a> to be added </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="ab18ed95c8456fbd32c24ab2613c88fd9" name="ab18ed95c8456fbd32c24ab2613c88fd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab18ed95c8456fbd32c24ab2613c88fd9">&#9670;&#160;</a></span>executeCommands()</h2>
 
@@ -118,7 +145,7 @@ std::vector&lt; std::shared_ptr&lt; <a class="el" href="classCommand.html">Comma
 </div><div class="memdoc">
 
 <p>Executes added commands. </p>
-<dl class="section note"><dt>Note</dt><dd>After execution the list of the commands is cleared. </dd></dl>
+<p>The related methods of the commands are called </p><dl class="section note"><dt>Note</dt><dd>After execution the list of the commands is cleared. </dd></dl>
 
 </div>
 </div>

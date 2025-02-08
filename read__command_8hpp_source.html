@@ -102,19 +102,20 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  std::vector&lt;Element&gt; getReads()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">mReads</a>; }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> execute() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classReadCommand.html#a9ffc7d510341d982b6f04a1f398c60bb">execute</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="classReadCommand.html#ae8ecb7994aac840aab541933e5edfea6">   29</a></span>  std::weak_ptr&lt;Receiver&gt; <a class="code hl_variable" href="classReadCommand.html#ae8ecb7994aac840aab541933e5edfea6">mReceiver</a>;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">   33</a></span>  std::vector&lt;Element&gt; <a class="code hl_variable" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">mReads</a>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 </div>
-<div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Interface of method for command execution.</div><div class="ttdef"><b>Definition</b> command.hpp:6</div></div>
-<div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdef"><b>Definition</b> element.hpp:6</div></div>
+<div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Interface of method for command execution.</div><div class="ttdef"><b>Definition</b> command.hpp:17</div></div>
+<div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdoc">Example element.</div><div class="ttdef"><b>Definition</b> element.hpp:13</div></div>
 <div class="ttc" id="aclassReadCommand_html"><div class="ttname"><a href="classReadCommand.html">ReadCommand</a></div><div class="ttdoc">Read Command Implements additional method to read stored Elements.</div><div class="ttdef"><b>Definition</b> read_command.hpp:15</div></div>
+<div class="ttc" id="aclassReadCommand_html_a9ffc7d510341d982b6f04a1f398c60bb"><div class="ttname"><a href="classReadCommand.html#a9ffc7d510341d982b6f04a1f398c60bb">ReadCommand::execute</a></div><div class="ttdeci">void execute() override</div><div class="ttdoc">Action to be executed.</div><div class="ttdef"><b>Definition</b> read_command.cpp:11</div></div>
 <div class="ttc" id="aclassReadCommand_html_ad293805fbd682cee422c3d2abc9e2b40"><div class="ttname"><a href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">ReadCommand::mReads</a></div><div class="ttdeci">std::vector&lt; Element &gt; mReads</div><div class="ttdoc">Context data Required for launching the receiver's methods.</div><div class="ttdef"><b>Definition</b> read_command.hpp:33</div></div>
 <div class="ttc" id="aclassReadCommand_html_ae8ecb7994aac840aab541933e5edfea6"><div class="ttname"><a href="classReadCommand.html#ae8ecb7994aac840aab541933e5edfea6">ReadCommand::mReceiver</a></div><div class="ttdeci">std::weak_ptr&lt; Receiver &gt; mReceiver</div><div class="ttdoc">Object to delegate complex data operations Commands can delegate to any methods of a receiver.</div><div class="ttdef"><b>Definition</b> read_command.hpp:29</div></div>
-<div class="ttc" id="aclassReceiver_html"><div class="ttname"><a href="classReceiver.html">Receiver</a></div><div class="ttdoc">Interface to business logic Methods are to perform all kinds of operations, associated with carrying ...</div><div class="ttdef"><b>Definition</b> receiver.hpp:13</div></div>
+<div class="ttc" id="aclassReceiver_html"><div class="ttname"><a href="classReceiver.html">Receiver</a></div><div class="ttdoc">Interface to business logic.</div><div class="ttdef"><b>Definition</b> receiver.hpp:20</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

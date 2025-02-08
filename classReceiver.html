@@ -77,7 +77,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Interface to business logic Methods are to perform all kinds of operations, associated with carrying out a request.  
+<p>Interface to business logic.  
  <a href="classReceiver.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="receiver_8hpp_source.html">receiver.hpp</a>&gt;</code></p>
@@ -86,7 +86,7 @@ Inheritance diagram for Receiver:</div>
 <div class="dyncontent">
 <div class="center"><img src="classReceiver__inherit__graph.png" border="0" usemap="#aReceiver_inherit__map" alt="Inheritance graph"/></div>
 <map name="aReceiver_inherit__map" id="aReceiver_inherit__map">
-<area shape="rect" title="Interface to business logic Methods are to perform all kinds of operations, associated with carrying ..." alt="" coords="115,5,193,31"/>
+<area shape="rect" title="Interface to business logic." alt="" coords="115,5,193,31"/>
 <area shape="rect" href="classContainerReceiver.html" title="Implements multiple element storage. Container stores multiple ordered unique elements." alt="" coords="5,79,148,104"/>
 <area shape="poly" title=" " alt="" coords="133,42,91,80,88,76,130,38"/>
 <area shape="rect" href="classSingleReceiver.html" title="Implements single element storage." alt="" coords="172,79,291,104"/>
@@ -96,22 +96,168 @@ Inheritance diagram for Receiver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acf066842526dda0c12b593eeefc83693" id="r_acf066842526dda0c12b593eeefc83693"><td class="memItemLeft" align="right" valign="top"><a id="acf066842526dda0c12b593eeefc83693" name="acf066842526dda0c12b593eeefc83693"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>create</b> (std::string_view aData)=0</td></tr>
+<tr class="memitem:acf066842526dda0c12b593eeefc83693" id="r_acf066842526dda0c12b593eeefc83693"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceiver.html#acf066842526dda0c12b593eeefc83693">create</a> (std::string_view aData)=0</td></tr>
+<tr class="memdesc:acf066842526dda0c12b593eeefc83693"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create action.  <br /></td></tr>
 <tr class="separator:acf066842526dda0c12b593eeefc83693"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3c99306cf908247cc080bffdcf4ac1d" id="r_ab3c99306cf908247cc080bffdcf4ac1d"><td class="memItemLeft" align="right" valign="top"><a id="ab3c99306cf908247cc080bffdcf4ac1d" name="ab3c99306cf908247cc080bffdcf4ac1d"></a>
-virtual std::vector&lt; <a class="el" href="classElement.html">Element</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>read</b> ()=0</td></tr>
+<tr class="memitem:ab3c99306cf908247cc080bffdcf4ac1d" id="r_ab3c99306cf908247cc080bffdcf4ac1d"><td class="memItemLeft" align="right" valign="top">virtual std::vector&lt; <a class="el" href="classElement.html">Element</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceiver.html#ab3c99306cf908247cc080bffdcf4ac1d">read</a> ()=0</td></tr>
+<tr class="memdesc:ab3c99306cf908247cc080bffdcf4ac1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read action.  <br /></td></tr>
 <tr class="separator:ab3c99306cf908247cc080bffdcf4ac1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a931343e2f17ee18a771adc808efad464" id="r_a931343e2f17ee18a771adc808efad464"><td class="memItemLeft" align="right" valign="top"><a id="a931343e2f17ee18a771adc808efad464" name="a931343e2f17ee18a771adc808efad464"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (const <a class="el" href="classElement.html">Element</a> &amp;aUpdated)=0</td></tr>
+<tr class="memitem:a931343e2f17ee18a771adc808efad464" id="r_a931343e2f17ee18a771adc808efad464"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceiver.html#a931343e2f17ee18a771adc808efad464">update</a> (const <a class="el" href="classElement.html">Element</a> &amp;aUpdated)=0</td></tr>
+<tr class="memdesc:a931343e2f17ee18a771adc808efad464"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update action.  <br /></td></tr>
 <tr class="separator:a931343e2f17ee18a771adc808efad464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad961aa8cafd90c8eec021b821f72d9e6" id="r_ad961aa8cafd90c8eec021b821f72d9e6"><td class="memItemLeft" align="right" valign="top"><a id="ad961aa8cafd90c8eec021b821f72d9e6" name="ad961aa8cafd90c8eec021b821f72d9e6"></a>
-virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>remove</b> (const <a class="el" href="classElement.html">Element</a> &amp;aRemoved)=0</td></tr>
+<tr class="memitem:ad961aa8cafd90c8eec021b821f72d9e6" id="r_ad961aa8cafd90c8eec021b821f72d9e6"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReceiver.html#ad961aa8cafd90c8eec021b821f72d9e6">remove</a> (const <a class="el" href="classElement.html">Element</a> &amp;aRemoved)=0</td></tr>
+<tr class="memdesc:ad961aa8cafd90c8eec021b821f72d9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove action.  <br /></td></tr>
 <tr class="separator:ad961aa8cafd90c8eec021b821f72d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Interface to business logic Methods are to perform all kinds of operations, associated with carrying out a request. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Interface to business logic. </p>
+<p>Methods are to perform all kinds of operations, associated with carrying out a request.</p>
+<p>Specific implementations contain some important business logic. It is the knowledge to perform all kinds of operations, associated with carrying out a request.</p>
+<p>In this case the Repository Pattern methods are presented </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acf066842526dda0c12b593eeefc83693" name="acf066842526dda0c12b593eeefc83693"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf066842526dda0c12b593eeefc83693">&#9670;&#160;</a></span>create()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Receiver::create </td>
+          <td>(</td>
+          <td class="paramtype">std::string_view&#160;</td>
+          <td class="paramname"><em>aData</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aData</td><td>Identifier of an <a class="el" href="classElement.html" title="Example element.">Element</a> to be created </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classElement.html" title="Example element.">Element</a> </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if element is successfully created </dd></dl>
+
+<p>Implemented in <a class="el" href="classContainerReceiver.html#ab53c9dfcef2fc9816a2522d9300f50f0">ContainerReceiver</a>, and <a class="el" href="classSingleReceiver.html#aaf20aefd35d4c9420d4a631cf3ea4b73">SingleReceiver</a>.</p>
+
+</div>
+</div>
+<a id="ab3c99306cf908247cc080bffdcf4ac1d" name="ab3c99306cf908247cc080bffdcf4ac1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3c99306cf908247cc080bffdcf4ac1d">&#9670;&#160;</a></span>read()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::vector&lt; <a class="el" href="classElement.html">Element</a> &gt; Receiver::read </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read action. </p>
+<dl class="section return"><dt>Returns</dt><dd>Read elements </dd></dl>
+
+<p>Implemented in <a class="el" href="classContainerReceiver.html#a1e03d0a242e044a43d3b8ff4df2c898d">ContainerReceiver</a>, and <a class="el" href="classSingleReceiver.html#a7b730dd23b1f2303832e812c5faad920">SingleReceiver</a>.</p>
+
+</div>
+</div>
+<a id="ad961aa8cafd90c8eec021b821f72d9e6" name="ad961aa8cafd90c8eec021b821f72d9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad961aa8cafd90c8eec021b821f72d9e6">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Receiver::remove </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classElement.html">Element</a> &amp;&#160;</td>
+          <td class="paramname"><em>aRemoved</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aRemoved</td><td><a class="el" href="classElement.html" title="Example element.">Element</a> to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if element is successfully removed </dd></dl>
+
+<p>Implemented in <a class="el" href="classContainerReceiver.html#a362023e8172ef1d26da3060551aa2d63">ContainerReceiver</a>, and <a class="el" href="classSingleReceiver.html#af775339b7618c39586ae8ff9bdcc1d62">SingleReceiver</a>.</p>
+
+</div>
+</div>
+<a id="a931343e2f17ee18a771adc808efad464" name="a931343e2f17ee18a771adc808efad464"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931343e2f17ee18a771adc808efad464">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool Receiver::update </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classElement.html">Element</a> &amp;&#160;</td>
+          <td class="paramname"><em>aUpdated</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Update action. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aUpdated</td><td><a class="el" href="classElement.html" title="Example element.">Element</a> to be updated </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if element is successfully updated </dd></dl>
+
+<p>Implemented in <a class="el" href="classContainerReceiver.html#a61b809bbc9abc5e9351e030cdfd73a1d">ContainerReceiver</a>, and <a class="el" href="classSingleReceiver.html#a1f05da2c8d806a75c9be8f075573554f">SingleReceiver</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="receiver_8hpp_source.html">receiver.hpp</a></li>
 </ul>
 </div><!-- contents -->

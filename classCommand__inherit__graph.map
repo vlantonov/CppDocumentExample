@@ -1,8 +1,8 @@
 <map id="Command" name="Command">
 <area shape="rect" id="Node000001" title="Interface of method for command execution." alt="" coords="259,5,348,31"/>
-<area shape="rect" id="Node000002" href="$classCreateCommand.html" title="Create Command Creates an Element in storage." alt="" coords="5,79,137,104"/>
+<area shape="rect" id="Node000002" href="$classCreateCommand.html" title="Create Command." alt="" coords="5,79,137,104"/>
 <area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="254,37,110,81,108,76,252,32"/>
-<area shape="rect" id="Node000003" href="$classDeleteCommand.html" title="Delete Command Deletes an Element from storage." alt="" coords="161,79,293,104"/>
+<area shape="rect" id="Node000003" href="$classDeleteCommand.html" title="Delete Command." alt="" coords="161,79,293,104"/>
 <area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="283,42,242,80,238,76,279,38"/>
 <area shape="rect" id="Node000004" href="$classReadCommand.html" title="Read Command Implements additional method to read stored Elements." alt="" coords="318,79,441,104"/>
 <area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="327,38,369,76,365,80,324,42"/>

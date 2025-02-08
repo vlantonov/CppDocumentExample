@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['readcommand_0',['ReadCommand',['../classReadCommand.html',1,'']]],
-  ['receiver_1',['Receiver',['../classReceiver.html',1,'']]],
-  ['references_2',['references',['../index.html#autotoc_md14',1,'Command Pattern References'],['../index.html#autotoc_md15',1,'Technical References']]],
-  ['related_3',['Scope related',['../index.html#autotoc_md6',1,'']]]
+  ['pages_0',['pages',['../index.html#autotoc_md16',1,'Example Document pages'],['../index.html#autotoc_md12',1,'Publish with Gitlab Pages']]],
+  ['pattern_20references_1',['Command Pattern References',['../index.html#autotoc_md14',1,'']]],
+  ['points_2',['Entrance points',['../index.html#autotoc_md7',1,'']]],
+  ['publish_20with_20github_20action_3',['Publish with GitHub action',['../index.html#autotoc_md11',1,'']]],
+  ['publish_20with_20gitlab_20pages_4',['Publish with Gitlab Pages',['../index.html#autotoc_md12',1,'']]]
 ];

@@ -87,9 +87,9 @@ Inheritance diagram for Command:</div>
 <div class="center"><img src="classCommand__inherit__graph.png" border="0" usemap="#aCommand_inherit__map" alt="Inheritance graph"/></div>
 <map name="aCommand_inherit__map" id="aCommand_inherit__map">
 <area shape="rect" title="Interface of method for command execution." alt="" coords="259,5,348,31"/>
-<area shape="rect" href="classCreateCommand.html" title="Create Command Creates an Element in storage." alt="" coords="5,79,137,104"/>
+<area shape="rect" href="classCreateCommand.html" title="Create Command." alt="" coords="5,79,137,104"/>
 <area shape="poly" title=" " alt="" coords="254,37,110,81,108,76,252,32"/>
-<area shape="rect" href="classDeleteCommand.html" title="Delete Command Deletes an Element from storage." alt="" coords="161,79,293,104"/>
+<area shape="rect" href="classDeleteCommand.html" title="Delete Command." alt="" coords="161,79,293,104"/>
 <area shape="poly" title=" " alt="" coords="283,42,242,80,238,76,279,38"/>
 <area shape="rect" href="classReadCommand.html" title="Read Command Implements additional method to read stored Elements." alt="" coords="318,79,441,104"/>
 <area shape="poly" title=" " alt="" coords="327,38,369,76,365,80,324,42"/>
@@ -100,13 +100,84 @@ Inheritance diagram for Command:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6fd7d9bd8df8bfc881e4d6c7cd1878b7" id="r_a6fd7d9bd8df8bfc881e4d6c7cd1878b7"><td class="memItemLeft" align="right" valign="top"><a id="a6fd7d9bd8df8bfc881e4d6c7cd1878b7" name="a6fd7d9bd8df8bfc881e4d6c7cd1878b7"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>execute</b> ()=0</td></tr>
+<tr class="memitem:aa545a53d35818f9efb936daf3fa16c61" id="r_aa545a53d35818f9efb936daf3fa16c61"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommand.html#aa545a53d35818f9efb936daf3fa16c61">~Command</a> ()=default</td></tr>
+<tr class="memdesc:aa545a53d35818f9efb936daf3fa16c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface destructor.  <br /></td></tr>
+<tr class="separator:aa545a53d35818f9efb936daf3fa16c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fd7d9bd8df8bfc881e4d6c7cd1878b7" id="r_a6fd7d9bd8df8bfc881e4d6c7cd1878b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCommand.html#a6fd7d9bd8df8bfc881e4d6c7cd1878b7">execute</a> ()=0</td></tr>
+<tr class="memdesc:a6fd7d9bd8df8bfc881e4d6c7cd1878b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Action to be executed.  <br /></td></tr>
 <tr class="separator:a6fd7d9bd8df8bfc881e4d6c7cd1878b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interface of method for command execution. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<p>Decouples the object that invokes the operation from the one that knows how to perform it. Holds:</p>
+<ul>
+<li>An object</li>
+<li>A method to be applied to the object</li>
+<li>The arguments to be passed when the method is applied.</li>
+</ul>
+<p>Commands can delegate to any methods of a receiver. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReceiver.html" title="Interface to business logic.">Receiver</a> </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa545a53d35818f9efb936daf3fa16c61" name="aa545a53d35818f9efb936daf3fa16c61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa545a53d35818f9efb936daf3fa16c61">&#9670;&#160;</a></span>~Command()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Command::~Command </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Interface destructor. </p>
+<p>The destructor of a base class should be virtual to prevent memory leak of derived class object when destroyed via base class pointer </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6fd7d9bd8df8bfc881e4d6c7cd1878b7" name="a6fd7d9bd8df8bfc881e4d6c7cd1878b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fd7d9bd8df8bfc881e4d6c7cd1878b7">&#9670;&#160;</a></span>execute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Command::execute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Action to be executed. </p>
+<p>Calls action on the receiver </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReceiver.html" title="Interface to business logic.">Receiver</a> </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This description will be shown in all derived classes unless overridden </dd></dl>
+
+<p>Implemented in <a class="el" href="classCreateCommand.html#a5fc69a7f05c22c9aea02eba61dbdced8">CreateCommand</a>, <a class="el" href="classDeleteCommand.html#a686fa9bbbaf61af7441472c0080211c2">DeleteCommand</a>, <a class="el" href="classReadCommand.html#a9ffc7d510341d982b6f04a1f398c60bb">ReadCommand</a>, and <a class="el" href="classUpdateCommand.html#af2f0216721ad3a7aac651784751ef52c">UpdateCommand</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/<a class="el" href="command_8hpp_source.html">command.hpp</a></li>
 </ul>
 </div><!-- contents -->

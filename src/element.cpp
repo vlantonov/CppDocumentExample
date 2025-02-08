@@ -3,6 +3,10 @@
 #include <iostream>
 #include <utility>
 
+///
+/// This comment is written inside the source file.
+/// Appears as separate paragprah from header comments.
+///
 Element::Element() { std::cout << "Element default ctor " << this << "\n"; }
 
 Element::Element(std::string_view aData) : mData{std::move(aData)} {

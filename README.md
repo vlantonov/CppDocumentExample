@@ -62,6 +62,26 @@ doxygen ./doc/Doxyfile
 * Include functions body to the generated HTML's: `INLINE_SOURCES = YES`
 * Specify files/folders with example code: `EXAMPLE_PATH = "..."`
 
+### Recipe to generate generate call/caller graph
+```
+HAVE_DOT               = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DISABLE_INDEX          = YES
+GENERATE_TREEVIEW      = YES
+RECURSIVE              = YES
+```
+Consider also:
+```
+EXTRACT_PACKAGE        = YES
+EXTRACT_LOCAL_METHODS  = YES
+EXTRACT_ANON_NSPACES   = YES
+```
+Use `@includedbygraph` , `@hideincludedbygraph`, `@callgraph` and `@hidecallgraph` to control the graph preparation.
+
 ## Doxygen CMake target
 ```bash
 find_package(Doxygen REQUIRED dot)
@@ -101,6 +121,8 @@ doxygen_add_docs(docs_target
 * [Learn how to use doxygen](http://www.whatimade.today/learn-how-to-use-doxygen/)
 * [CPP / C++ Notes - Doxygen - Documentation Generator](https://caiorss.github.io/C-Cpp-Notes/Doxygen-documentation.html)
 * [Doxygen for C++ projects](https://www.codementor.io/@sisco0/doxygen-for-c-projects-15o4chhkad)
+* [Doxygen with Graphviz to generate call graph on Mac](https://medium.com/macoclock/doxygen-with-graphviz-to-generate-call-graph-on-mac-f9a3160db641)
+* [Doxygen C++ documentation for complete beginners](https://darkognu.eu/programming/tutorials/doxygen_tutorial_cpp/)
 
 ## Command Pattern References
 * [refactoring.guru:Command](https://refactoring.guru/design-patterns/command/)

@@ -24,6 +24,13 @@ set(DOXYGEN_USE_MDFILE_AS_MAINPAGE README.md)
 # Show used smart pointers, STL containers
 set(DOXYGEN_HIDE_UNDOC_RELATIONS  NO)
 
+# Generate call/caller graph - uses dot
+set(DOXYGEN_EXTRACT_ALL            YES)
+set(DOXYGEN_CALL_GRAPH             YES)
+set(DOXYGEN_CALLER_GRAPH           YES)
+set(DOXYGEN_DISABLE_INDEX          YES)
+set(DOXYGEN_GENERATE_TREEVIEW      YES)
+
 doxygen_add_docs(docs_target
   ${PROJECT_SOURCE_DIR}
   COMMENT "Generate documentation"

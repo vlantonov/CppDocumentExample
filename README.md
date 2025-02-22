@@ -139,3 +139,4 @@ doxygen_add_docs(docs_target
 ## Example Document pages
 * <https://github.com/nullromo/doxygen-example>
 * <https://gitlab.com/pages/doxygen>
+* [Projects using doxygen](https://www.doxygen.nl/projects.html)

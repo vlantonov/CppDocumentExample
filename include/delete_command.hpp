@@ -16,7 +16,7 @@ class DeleteCommand : public Command {
  public:
   /// @brief Delete Command constructor
   /// @param aReceiver Object to delegate execution
-  /// @param aData Context data for the receiver
+  /// @param aData Context data for the receiver - element to be deleted
   DeleteCommand(std::weak_ptr<Receiver> aReceiver, Element aDeleteData);
 
   ~DeleteCommand() override = default;

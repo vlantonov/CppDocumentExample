@@ -21,6 +21,9 @@ set(DOXYGEN_RECURSIVE             YES)
 set(DOXYGEN_GENERATE_LATEX        NO)
 set(DOXYGEN_USE_MDFILE_AS_MAINPAGE README.md)
 
+# Show used smart pointers, STL containers
+set(DOXYGEN_HIDE_UNDOC_RELATIONS  NO)
+
 doxygen_add_docs(docs_target
   ${PROJECT_SOURCE_DIR}
   COMMENT "Generate documentation"

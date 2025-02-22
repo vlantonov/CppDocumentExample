@@ -40,6 +40,7 @@ doxygen ./doc/Doxyfile
 * Show static members of class: `EXTRACT_STATIC = YES`
 * Show all memebers of internal scope: `EXTRACT_PACKAGE = YES`
 * Show members of anonymous namespace: `EXTRACT_ANON_NSPACES = YES`
+* Show used C++ STL containers, smart pointers, etc. : `HIDE_UNDOC_RELATIONS = NO`
 
 ### Entrance points
 * Add all the header and source file extensions used: `FILE_PATTERNS = *.cpp *.h *.hpp`

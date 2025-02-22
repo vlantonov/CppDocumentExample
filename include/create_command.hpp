@@ -19,7 +19,14 @@ class CreateCommand : public Command {
  public:
   /// @brief Create Command constructor
   /// @param aReceiver Object to delegate execution
-  /// @param aData Context data for the receiver
+  /// @param aData Context data for the receiver.
+  /// Identifier of an element to be created.
+  ///
+  /// This comment appears separated after the list of parameters.
+  /// @see Element
+  /// The class is used for demonstration purposes.
+  ///
+  /// This comment appears separated after the see note.
   CreateCommand(std::weak_ptr<Receiver> aReceiver, std::string_view aData);
 
   ///

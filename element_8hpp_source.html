@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,10 +30,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Document Example
+   <div id="projectname">C++ Document Example<span id="projectnumber">&#160;1.2.3</span>
    </div>
    <div id="projectbrief">Simple example about how to create C++ project documentation with Doxygen</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -36,22 +57,23 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('element_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
-/* @license-end */
-</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -73,16 +95,11 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">element.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="element_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string_view&gt;</span></div>
@@ -94,43 +111,47 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">explicit</span> <a class="code hl_function" href="classElement.html#ab0d0e20be9a36ae676202db753faeec9">Element</a>(std::string_view aData);</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <a class="code hl_function" href="classElement.html#a77d81ee0e3ee3d41703579bb19303224">~Element</a>() <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <a class="code hl_function" href="classElement.html#ab0d0e20be9a36ae676202db753faeec9">Element</a>(<span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp; aOther);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <a class="code hl_function" href="classElement.html#ab0d0e20be9a36ae676202db753faeec9">Element</a>(<a class="code hl_class" href="classElement.html">Element</a>&amp;&amp; aOther) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <a class="code hl_class" href="classElement.html">Element</a>&amp; <a class="code hl_function" href="classElement.html#a3db8ada8c8ea25d2b404728511db633e">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp; aOther);</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <a class="code hl_class" href="classElement.html">Element</a>&amp; <a class="code hl_function" href="classElement.html#a3db8ada8c8ea25d2b404728511db633e">operator=</a>(<a class="code hl_class" href="classElement.html">Element</a>&amp;&amp; aOther) <span class="keyword">noexcept</span>;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classElement.html#a60c27ed4c391d19731f31bf7672cd57d">   80</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classElement.html#a60c27ed4c391d19731f31bf7672cd57d">operator&lt;=&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp;) <span class="keyword">const</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="foldopen" id="foldopen00090" data-start="{" data-end="};">
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="classElement.html#aa8c2a41306d33196dda2c1eb16c3569c">   90</a></span>  <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classElement.html#aa8c2a41306d33196dda2c1eb16c3569c">operator&lt;&lt;</a>(std::ostream&amp; aOutputStream,</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>                                  <span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp; aValue) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">constexpr</span> std::string_view prefix{<span class="stringliteral">&quot;Element{&quot;</span>};</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">constexpr</span> std::string_view suffix{<span class="stringliteral">&quot;}&quot;</span>};</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    aOutputStream &lt;&lt; prefix &lt;&lt; aValue.<a class="code hl_variable" href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">mData</a> &lt;&lt; suffix;</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">return</span> aOutputStream;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_function" href="classElement.html#a77d81ee0e3ee3d41703579bb19303224">~Element</a>() <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <a class="code hl_function" href="classElement.html#ab0d0e20be9a36ae676202db753faeec9">Element</a>(<span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp; aOther);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <a class="code hl_function" href="classElement.html#ab0d0e20be9a36ae676202db753faeec9">Element</a>(<a class="code hl_class" href="classElement.html">Element</a>&amp;&amp; aOther) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <a class="code hl_class" href="classElement.html">Element</a>&amp; <a class="code hl_function" href="classElement.html#a3db8ada8c8ea25d2b404728511db633e">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp; aOther);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <a class="code hl_class" href="classElement.html">Element</a>&amp; <a class="code hl_function" href="classElement.html#a3db8ada8c8ea25d2b404728511db633e">operator=</a>(<a class="code hl_class" href="classElement.html">Element</a>&amp;&amp; aOther) <span class="keyword">noexcept</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classElement.html#a60c27ed4c391d19731f31bf7672cd57d">   84</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="classElement.html#a60c27ed4c391d19731f31bf7672cd57d">operator&lt;=&gt;</a>(<span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp;) <span class="keyword">const</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="foldopen" id="foldopen00094" data-start="{" data-end="};">
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno"><a class="line" href="classElement.html#aa8c2a41306d33196dda2c1eb16c3569c">   94</a></span>  <span class="keyword">friend</span> std::ostream&amp; <a class="code hl_friend" href="classElement.html#aa8c2a41306d33196dda2c1eb16c3569c">operator&lt;&lt;</a>(std::ostream&amp; aOutputStream,</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>                                  <span class="keyword">const</span> <a class="code hl_class" href="classElement.html">Element</a>&amp; aValue) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keyword">constexpr</span> std::string_view prefix{<span class="stringliteral">&quot;Element{&quot;</span>};</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">constexpr</span> std::string_view suffix{<span class="stringliteral">&quot;}&quot;</span>};</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    aOutputStream &lt;&lt; prefix &lt;&lt; aValue.<a class="code hl_variable" href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">mData</a> &lt;&lt; suffix;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">return</span> aOutputStream;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  }</div>
 </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">  102</a></span>  std::string <a class="code hl_variable" href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">mData</a>;</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>};</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">  106</a></span>  std::string <a class="code hl_variable" href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">mData</a>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>};</div>
 </div>
 <div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdoc">Example element.</div><div class="ttdef"><b>Definition</b> element.hpp:13</div></div>
 <div class="ttc" id="aclassElement_html_a3db8ada8c8ea25d2b404728511db633e"><div class="ttname"><a href="classElement.html#a3db8ada8c8ea25d2b404728511db633e">Element::operator=</a></div><div class="ttdeci">Element &amp; operator=(const Element &amp;aOther)</div><div class="ttdoc">Copy assignment operator.</div><div class="ttdef"><b>Definition</b> element.cpp:31</div></div>
 <div class="ttc" id="aclassElement_html_a60c27ed4c391d19731f31bf7672cd57d"><div class="ttname"><a href="classElement.html#a60c27ed4c391d19731f31bf7672cd57d">Element::operator&lt;=&gt;</a></div><div class="ttdeci">auto operator&lt;=&gt;(const Element &amp;) const =default</div><div class="ttdoc">Define default comparison.</div></div>
-<div class="ttc" id="aclassElement_html_a68328bbd908dcde3ea5e8dca442a75b1"><div class="ttname"><a href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">Element::mData</a></div><div class="ttdeci">std::string mData</div><div class="ttdoc">Object identifier.</div><div class="ttdef"><b>Definition</b> element.hpp:102</div></div>
+<div class="ttc" id="aclassElement_html_a68328bbd908dcde3ea5e8dca442a75b1"><div class="ttname"><a href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">Element::mData</a></div><div class="ttdeci">std::string mData</div><div class="ttdoc">Object identifier.</div><div class="ttdef"><b>Definition</b> element.hpp:106</div></div>
 <div class="ttc" id="aclassElement_html_a77d81ee0e3ee3d41703579bb19303224"><div class="ttname"><a href="classElement.html#a77d81ee0e3ee3d41703579bb19303224">Element::~Element</a></div><div class="ttdeci">~Element() noexcept</div><div class="ttdoc">Destructor.</div><div class="ttdef"><b>Definition</b> element.cpp:16</div></div>
-<div class="ttc" id="aclassElement_html_aa8c2a41306d33196dda2c1eb16c3569c"><div class="ttname"><a href="classElement.html#aa8c2a41306d33196dda2c1eb16c3569c">Element::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;aOutputStream, const Element &amp;aValue)</div><div class="ttdoc">Print operator.</div><div class="ttdef"><b>Definition</b> element.hpp:90</div></div>
+<div class="ttc" id="aclassElement_html_aa8c2a41306d33196dda2c1eb16c3569c"><div class="ttname"><a href="classElement.html#aa8c2a41306d33196dda2c1eb16c3569c">Element::operator&lt;&lt;</a></div><div class="ttdeci">friend std::ostream &amp; operator&lt;&lt;(std::ostream &amp;aOutputStream, const Element &amp;aValue)</div><div class="ttdoc">Print operator.</div><div class="ttdef"><b>Definition</b> element.hpp:94</div></div>
 <div class="ttc" id="aclassElement_html_ab0d0e20be9a36ae676202db753faeec9"><div class="ttname"><a href="classElement.html#ab0d0e20be9a36ae676202db753faeec9">Element::Element</a></div><div class="ttdeci">Element()</div><div class="ttdoc">Default constructor.</div><div class="ttdef"><b>Definition</b> element.cpp:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="element_8hpp.html">element.hpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

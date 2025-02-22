@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,10 +30,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Document Example
+   <div id="projectname">C++ Document Example<span id="projectnumber">&#160;1.2.3</span>
    </div>
    <div id="projectbrief">Simple example about how to create C++ project documentation with Doxygen</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -36,22 +57,23 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('read__command_8hpp_source.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-<script type="text/javascript">
-/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function() { init_codefold(0); });
-/* @license-end */
-</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -73,21 +95,16 @@ $(document).ready(function() { init_codefold(0); });
 </div>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">read_command.hpp</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<a href="read__command_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;command.hpp&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="command_8hpp.html">command.hpp</a>&quot;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">class </span><a class="code hl_class" href="classReceiver.html">Receiver</a>;</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">class </span><a class="code hl_class" href="classElement.html">Element</a>;</div>
@@ -97,9 +114,9 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_class" href="classReadCommand.html">ReadCommand</a>(std::weak_ptr&lt;Receiver&gt; aReceiver);</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_class" href="classReadCommand.html">~ReadCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classReadCommand.html#ac62a3a6d2edb1dfe4b1bed2cc68b64b7">   19</a></span>  <a class="code hl_function" href="classReadCommand.html#ac62a3a6d2edb1dfe4b1bed2cc68b64b7">~ReadCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  std::vector&lt;Element&gt; getReads()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">mReads</a>; }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classReadCommand.html#abb1119374ceb1f322f1a2b785d133585">   21</a></span>  std::vector&lt;Element&gt; <a class="code hl_function" href="classReadCommand.html#abb1119374ceb1f322f1a2b785d133585">getReads</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">mReads</a>; }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classReadCommand.html#a9ffc7d510341d982b6f04a1f398c60bb">execute</a>() <span class="keyword">override</span>;</div>
@@ -109,17 +126,24 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">   33</a></span>  std::vector&lt;Element&gt; <a class="code hl_variable" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">mReads</a>;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>};</div>
 </div>
-<div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Interface of method for command execution.</div><div class="ttdef"><b>Definition</b> command.hpp:17</div></div>
+<div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Interface of method for command execution.</div><div class="ttdef"><b>Definition</b> command.hpp:18</div></div>
 <div class="ttc" id="aclassElement_html"><div class="ttname"><a href="classElement.html">Element</a></div><div class="ttdoc">Example element.</div><div class="ttdef"><b>Definition</b> element.hpp:13</div></div>
 <div class="ttc" id="aclassReadCommand_html"><div class="ttname"><a href="classReadCommand.html">ReadCommand</a></div><div class="ttdoc">Read Command Implements additional method to read stored Elements.</div><div class="ttdef"><b>Definition</b> read_command.hpp:15</div></div>
 <div class="ttc" id="aclassReadCommand_html_a9ffc7d510341d982b6f04a1f398c60bb"><div class="ttname"><a href="classReadCommand.html#a9ffc7d510341d982b6f04a1f398c60bb">ReadCommand::execute</a></div><div class="ttdeci">void execute() override</div><div class="ttdoc">Action to be executed.</div><div class="ttdef"><b>Definition</b> read_command.cpp:11</div></div>
+<div class="ttc" id="aclassReadCommand_html_abb1119374ceb1f322f1a2b785d133585"><div class="ttname"><a href="classReadCommand.html#abb1119374ceb1f322f1a2b785d133585">ReadCommand::getReads</a></div><div class="ttdeci">std::vector&lt; Element &gt; getReads() const</div><div class="ttdef"><b>Definition</b> read_command.hpp:21</div></div>
+<div class="ttc" id="aclassReadCommand_html_ac62a3a6d2edb1dfe4b1bed2cc68b64b7"><div class="ttname"><a href="classReadCommand.html#ac62a3a6d2edb1dfe4b1bed2cc68b64b7">ReadCommand::~ReadCommand</a></div><div class="ttdeci">~ReadCommand() override=default</div></div>
 <div class="ttc" id="aclassReadCommand_html_ad293805fbd682cee422c3d2abc9e2b40"><div class="ttname"><a href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">ReadCommand::mReads</a></div><div class="ttdeci">std::vector&lt; Element &gt; mReads</div><div class="ttdoc">Context data Required for launching the receiver's methods.</div><div class="ttdef"><b>Definition</b> read_command.hpp:33</div></div>
 <div class="ttc" id="aclassReadCommand_html_ae8ecb7994aac840aab541933e5edfea6"><div class="ttname"><a href="classReadCommand.html#ae8ecb7994aac840aab541933e5edfea6">ReadCommand::mReceiver</a></div><div class="ttdeci">std::weak_ptr&lt; Receiver &gt; mReceiver</div><div class="ttdoc">Object to delegate complex data operations Commands can delegate to any methods of a receiver.</div><div class="ttdef"><b>Definition</b> read_command.hpp:29</div></div>
 <div class="ttc" id="aclassReceiver_html"><div class="ttname"><a href="classReceiver.html">Receiver</a></div><div class="ttdoc">Interface to business logic.</div><div class="ttdef"><b>Definition</b> receiver.hpp:20</div></div>
+<div class="ttc" id="acommand_8hpp_html"><div class="ttname"><a href="command_8hpp.html">command.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="read__command_8hpp.html">read_command.hpp</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

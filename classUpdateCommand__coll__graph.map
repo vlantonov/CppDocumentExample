@@ -1,7 +1,11 @@
 <map id="UpdateCommand" name="UpdateCommand">
-<area shape="rect" id="Node000001" title="Update Command Updates an Element in storage." alt="" coords="35,93,171,119"/>
-<area shape="rect" id="Node000002" href="$classCommand.html" title="Interface of method for command execution." alt="" coords="5,5,95,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,41,98,91,94,94,62,44"/>
-<area shape="rect" id="Node000003" href="$classElement.html" title="Example element." alt="" coords="119,5,195,31"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,44,113,94,108,91,140,41"/>
+<area shape="rect" id="Node000001" title="Update Command Updates an Element in storage." alt="" coords="135,181,271,207"/>
+<area shape="rect" id="Node000002" href="$classCommand.html" title="Interface of method for command execution." alt="" coords="5,93,95,119"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,123,184,179,181,183,81,128"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,93,288,119"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,133,206,181,201,181,201,133"/>
+<area shape="rect" id="Node000004" href="$classElement.html" title="Example element." alt="" coords="312,93,388,119"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="327,130,285,160,235,184,232,179,282,155,324,125"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="321,5,379,31"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="353,45,353,93,347,93,347,45"/>
 </map>

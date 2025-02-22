@@ -1,5 +1,9 @@
 <map id="CreateCommand" name="CreateCommand">
-<area shape="rect" id="Node000001" title="Create Command." alt="" coords="5,79,137,104"/>
-<area shape="rect" id="Node000002" href="$classCommand.html" title="Interface of method for command execution." alt="" coords="27,5,116,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,44,74,79,69,79,69,44"/>
+<area shape="rect" id="Node000001" title="Create Command." alt="" coords="137,93,269,119"/>
+<area shape="rect" id="Node000002" href="$classCommand.html" title="Interface of method for command execution." alt="" coords="5,5,95,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,35,184,91,181,95,81,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,5,288,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,45,206,93,201,93,201,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="313,5,371,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="322,42,285,72,236,96,234,91,282,67,319,38"/>
 </map>

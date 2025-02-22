@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,10 +30,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Document Example
+   <div id="projectname">C++ Document Example<span id="projectnumber">&#160;1.2.3</span>
    </div>
    <div id="projectbrief">Simple example about how to create C++ project documentation with Doxygen</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -36,18 +57,23 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-</div><!-- top -->
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -118,6 +144,7 @@ Scope related</h2>
 <li>Show static members of class: <code>EXTRACT_STATIC = YES</code></li>
 <li>Show all memebers of internal scope: <code>EXTRACT_PACKAGE = YES</code></li>
 <li>Show members of anonymous namespace: <code>EXTRACT_ANON_NSPACES = YES</code></li>
+<li>Show used C++ STL containers, smart pointers, etc. : <code>HIDE_UNDOC_RELATIONS = NO</code></li>
 </ul>
 <h2><a class="anchor" id="autotoc_md7"></a>
 Entrance points</h2>
@@ -145,7 +172,22 @@ Source browsing</h2>
 <li>Include functions body to the generated HTML's: <code>INLINE_SOURCES = YES</code></li>
 <li>Specify files/folders with example code: <code>EXAMPLE_PATH = "..."</code></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Recipe to generate generate call/caller graph</h2>
+<div class="fragment"><div class="line">HAVE_DOT               = YES</div>
+<div class="line">EXTRACT_ALL            = YES</div>
+<div class="line">EXTRACT_PRIVATE        = YES</div>
+<div class="line">EXTRACT_STATIC         = YES</div>
+<div class="line">CALL_GRAPH             = YES</div>
+<div class="line">CALLER_GRAPH           = YES</div>
+<div class="line">DISABLE_INDEX          = YES</div>
+<div class="line">GENERATE_TREEVIEW      = YES</div>
+<div class="line">RECURSIVE              = YES</div>
+</div><!-- fragment --><p> Consider also: </p><div class="fragment"><div class="line">EXTRACT_PACKAGE        = YES</div>
+<div class="line">EXTRACT_LOCAL_METHODS  = YES</div>
+<div class="line">EXTRACT_ANON_NSPACES   = YES</div>
+</div><!-- fragment --><p> Use <code>@includedbygraph</code> , <code>@hideincludedbygraph</code>, <code>@callgraph</code> and <code>@hidecallgraph</code> to control the graph preparation.</p>
+<h1><a class="anchor" id="autotoc_md11"></a>
 Doxygen CMake target</h1>
 <div class="fragment"><div class="line">find_package(Doxygen REQUIRED dot)</div>
 <div class="line"> </div>
@@ -162,7 +204,7 @@ Doxygen CMake target</h1>
 <li><a href="https://vicrucann.github.io/tutorials/quick-cmake-doxygen/">Quick setup to use Doxygen with CMake</a></li>
 <li><a href="https://stackoverflow.com/questions/34878276/build-doxygen-from-cmake-script">Build doxygen from CMake script</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Publish with GitHub action</h1>
 <ul>
 <li>Create the github action: <code>.github/workflows/doxygen_publish.yml</code></li>
@@ -173,7 +215,7 @@ Publish with GitHub action</h1>
 <li>Set <code>Branch</code> to <code>gh-pages</code> and <code>/(root)</code></li>
 <li>Resulting site is <a href="https://vlantonov.github.io/CppDocumentExample/">https://vlantonov.github.io/CppDocumentExample/</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Publish with Gitlab Pages</h1>
 <ul>
 <li>Follow the steps in <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a></li>
@@ -182,7 +224,7 @@ Publish with Gitlab Pages</h1>
 <li>Go to <code>Settings &gt; General &gt; Visibility</code> and select <code>Everyone</code> in pages section.</li>
 <li>Resulting site is <a href="https://vladiant.gitlab.io/CppDocumentExample/">https://vladiant.gitlab.io/CppDocumentExample/</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Doxygen C++ examples</h1>
 <ul>
 <li><a href="https://codeyarns.com/tech/2014-06-18-how-to-configure-doxygen-for-c-code.html#gsc.tab=0">How to configure Doxygen for C++ code</a></li>
@@ -190,8 +232,10 @@ Doxygen C++ examples</h1>
 <li><a href="http://www.whatimade.today/learn-how-to-use-doxygen/">Learn how to use doxygen</a></li>
 <li><a href="https://caiorss.github.io/C-Cpp-Notes/Doxygen-documentation.html">CPP / C++ Notes - Doxygen - Documentation Generator</a></li>
 <li><a href="https://www.codementor.io/@sisco0/doxygen-for-c-projects-15o4chhkad">Doxygen for C++ projects</a></li>
+<li><a href="https://medium.com/macoclock/doxygen-with-graphviz-to-generate-call-graph-on-mac-f9a3160db641">Doxygen with Graphviz to generate call graph on Mac</a></li>
+<li><a href="https://darkognu.eu/programming/tutorials/doxygen_tutorial_cpp/">Doxygen C++ documentation for complete beginners</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Command Pattern References</h1>
 <ul>
 <li><a href="https://refactoring.guru/design-patterns/command/">refactoring.guru:Command</a></li>
@@ -200,24 +244,28 @@ Command Pattern References</h1>
 <li><a href="https://www.geeksforgeeks.org/repository-design-pattern/">Repository Design Pattern</a></li>
 <li><a href="https://deviq.com/design-patterns/repository-pattern">Repository Pattern</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Technical References</h1>
 <ul>
 <li><a href="https://www.modernescpp.com/index.php/the-copy-and-swap-idiom/">The Copy-and-Swap Idiom</a></li>
 <li><a href="https://www.fluentcpp.com/2020/09/18/what-stdexchange-does-and-how-to-remember-it/">What std::exchange does, and how to remember it</a></li>
 <li><a href="https://www.fluentcpp.com/2020/09/25/stdexchange-patterns-fast-safe-expressive-and-probably-underused/">std::exchange Patterns: Fast, Safe, Expressive, and Probably Underused</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Example Document pages</h1>
 <ul>
 <li><a href="https://github.com/nullromo/doxygen-example">https://github.com/nullromo/doxygen-example</a></li>
-<li><a href="https://gitlab.com/pages/doxygen">https://gitlab.com/pages/doxygen</a> </li>
+<li><a href="https://gitlab.com/pages/doxygen">https://gitlab.com/pages/doxygen</a></li>
+<li><a href="https://www.doxygen.nl/projects.html">Projects using doxygen</a> </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

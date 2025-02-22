@@ -1,5 +1,9 @@
 <map id="ReadCommand" name="ReadCommand">
-<area shape="rect" id="Node000001" title="Read Command Implements additional method to read stored Elements." alt="" coords="5,79,128,104"/>
-<area shape="rect" id="Node000002" href="$classCommand.html" title="Interface of method for command execution." alt="" coords="22,5,111,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="69,44,69,79,64,79,64,44"/>
+<area shape="rect" id="Node000001" title="Read Command Implements additional method to read stored Elements." alt="" coords="142,93,265,119"/>
+<area shape="rect" id="Node000002" href="$classCommand.html" title="Interface of method for command execution." alt="" coords="5,5,95,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="84,35,184,91,181,95,81,40"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="119,5,288,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="206,45,206,93,201,93,201,45"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="313,5,459,31"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="352,39,284,72,231,96,229,91,282,67,350,34"/>
 </map>

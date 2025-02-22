@@ -9,9 +9,18 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+  $(document).ready(function() { init_search(); });
+/* @license-end */
+</script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -21,10 +30,22 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">C++ Document Example
+   <div id="projectname">C++ Document Example<span id="projectnumber">&#160;1.2.3</span>
    </div>
    <div id="projectbrief">Simple example about how to create C++ project documentation with Doxygen</div>
   </td>
+    <td>        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <span id="MSearchSelect"                onmouseover="return searchBox.OnSearchSelectShow()"                onmouseout="return searchBox.OnSearchSelectHide()">&#160;</span>
+          <input type="text" id="MSearchField" value="" placeholder="Search" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.svg" alt=""/></a>
+          </span>
+        </div>
+</td>
  </tr>
  </tbody>
 </table>
@@ -36,18 +57,23 @@
 var searchBox = new SearchBox("searchBox", "search/",'.html');
 /* @license-end */
 </script>
-<script type="text/javascript" src="menudata.js"></script>
-<script type="text/javascript" src="menu.js"></script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function() {
-  initMenu('',true,false,'search.php','Search');
-  $(document).ready(function() { init_search(); });
-});
+$(document).ready(function(){initNavTree('functions.html',''); initResizable(); });
 /* @license-end */
 </script>
-<div id="main-nav"></div>
-</div><!-- top -->
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -70,7 +96,7 @@ $(function() {
 </div>
 
 <div class="contents">
-<div class="textblock">Here is a list of all documented class members with links to the class documentation for each member:</div>
+<div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_a" name="index_a"></a>- a -</h3><ul>
 <li>addCommand()&#160;:&#160;<a class="el" href="classInvoker.html#ac05a4d33676754b598fc868a25ac9ee2">Invoker</a></li>
@@ -96,12 +122,18 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
+<li>getReads()&#160;:&#160;<a class="el" href="classReadCommand.html#abb1119374ceb1f322f1a2b785d133585">ReadCommand</a></li>
+</ul>
+
+
 <h3><a id="index_m" name="index_m"></a>- m -</h3><ul>
 <li>mContainer&#160;:&#160;<a class="el" href="classContainerReceiver.html#a13b8bb6a2526d726e045c5ac2cd1fa51">ContainerReceiver</a></li>
 <li>mData&#160;:&#160;<a class="el" href="classCreateCommand.html#ab87223e86bb0c1a534c73a25d48c54a7">CreateCommand</a>, <a class="el" href="classElement.html#a68328bbd908dcde3ea5e8dca442a75b1">Element</a></li>
 <li>mDeleteData&#160;:&#160;<a class="el" href="classDeleteCommand.html#a767352d1297880f499610dbff87719f2">DeleteCommand</a></li>
 <li>mReads&#160;:&#160;<a class="el" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">ReadCommand</a></li>
 <li>mReceiver&#160;:&#160;<a class="el" href="classCreateCommand.html#a61c1176a9498a28c0d981cb5b9bd3e91">CreateCommand</a>, <a class="el" href="classDeleteCommand.html#a2e54743af7c75a556b99cd4f85525a9a">DeleteCommand</a>, <a class="el" href="classReadCommand.html#ae8ecb7994aac840aab541933e5edfea6">ReadCommand</a>, <a class="el" href="classUpdateCommand.html#a3b77177535d13422d42d763a2acffd0b">UpdateCommand</a></li>
+<li>mStored&#160;:&#160;<a class="el" href="classSingleReceiver.html#a4cfe2e0d3ec030b9b2f5d51b9eabd421">SingleReceiver</a></li>
 <li>mUpdateData&#160;:&#160;<a class="el" href="classUpdateCommand.html#af7c508d659cb093f187dd5c9e7b26a87">UpdateCommand</a></li>
 </ul>
 
@@ -115,24 +147,35 @@ $(function() {
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
 <li>read()&#160;:&#160;<a class="el" href="classContainerReceiver.html#a1e03d0a242e044a43d3b8ff4df2c898d">ContainerReceiver</a>, <a class="el" href="classReceiver.html#ab3c99306cf908247cc080bffdcf4ac1d">Receiver</a>, <a class="el" href="classSingleReceiver.html#a7b730dd23b1f2303832e812c5faad920">SingleReceiver</a></li>
+<li>ReadCommand()&#160;:&#160;<a class="el" href="classReadCommand.html#a254e82ce19555c15526f91dd4d542738">ReadCommand</a></li>
 <li>remove()&#160;:&#160;<a class="el" href="classContainerReceiver.html#a362023e8172ef1d26da3060551aa2d63">ContainerReceiver</a>, <a class="el" href="classReceiver.html#ad961aa8cafd90c8eec021b821f72d9e6">Receiver</a>, <a class="el" href="classSingleReceiver.html#af775339b7618c39586ae8ff9bdcc1d62">SingleReceiver</a></li>
 </ul>
 
 
 <h3><a id="index_u" name="index_u"></a>- u -</h3><ul>
 <li>update()&#160;:&#160;<a class="el" href="classContainerReceiver.html#a61b809bbc9abc5e9351e030cdfd73a1d">ContainerReceiver</a>, <a class="el" href="classReceiver.html#a931343e2f17ee18a771adc808efad464">Receiver</a>, <a class="el" href="classSingleReceiver.html#a1f05da2c8d806a75c9be8f075573554f">SingleReceiver</a></li>
+<li>UpdateCommand()&#160;:&#160;<a class="el" href="classUpdateCommand.html#a7a97391609e436edb009bdc24b9830be">UpdateCommand</a></li>
 </ul>
 
 
 <h3><a id="index__7E" name="index__7E"></a>- ~ -</h3><ul>
 <li>~Command()&#160;:&#160;<a class="el" href="classCommand.html#aa545a53d35818f9efb936daf3fa16c61">Command</a></li>
+<li>~ContainerReceiver()&#160;:&#160;<a class="el" href="classContainerReceiver.html#a60bbe21712e5384d61d6cf6096299b99">ContainerReceiver</a></li>
 <li>~CreateCommand()&#160;:&#160;<a class="el" href="classCreateCommand.html#a1fe1511fda85fd326f7e066a95ed5e76">CreateCommand</a></li>
+<li>~DeleteCommand()&#160;:&#160;<a class="el" href="classDeleteCommand.html#acdd4a7ee969afee5d63c02ce7257ce76">DeleteCommand</a></li>
 <li>~Element()&#160;:&#160;<a class="el" href="classElement.html#a77d81ee0e3ee3d41703579bb19303224">Element</a></li>
+<li>~ReadCommand()&#160;:&#160;<a class="el" href="classReadCommand.html#ac62a3a6d2edb1dfe4b1bed2cc68b64b7">ReadCommand</a></li>
+<li>~Receiver()&#160;:&#160;<a class="el" href="classReceiver.html#a818b4b9bf80a66d87304b35ddd33801b">Receiver</a></li>
+<li>~SingleReceiver()&#160;:&#160;<a class="el" href="classSingleReceiver.html#a68b241f5e7b64c3b34b88b38b3180dd4">SingleReceiver</a></li>
+<li>~UpdateCommand()&#160;:&#160;<a class="el" href="classUpdateCommand.html#a1fa4dd51769d747f3a9de8acff9c7317">UpdateCommand</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+  </ul>
+</div>
 </body>
 </html>

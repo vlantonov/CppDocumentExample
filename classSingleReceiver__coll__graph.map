@@ -1,5 +1,7 @@
 <map id="SingleReceiver" name="SingleReceiver">
-<area shape="rect" id="Node000001" title="Implements single element storage." alt="" coords="5,79,124,104"/>
-<area shape="rect" id="Node000002" href="$classReceiver.html" title="Interface to business logic." alt="" coords="25,5,104,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,44,67,79,62,79,62,44"/>
+<area shape="rect" id="Node000001" title="Implements single element storage." alt="" coords="56,93,175,119"/>
+<area shape="rect" id="Node000002" href="$classReceiver.html" title="Interface to business logic." alt="" coords="5,5,84,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,39,108,91,103,94,61,43"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="108,5,267,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,43,127,95,123,91,167,39"/>
 </map>

@@ -1,0 +1,7 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,60,56"/>
+<area shape="rect" id="Node000002" href="$classInvoker.html#ac05a4d33676754b598fc868a25ac9ee2" title="Add command to be executed." alt="" coords="125,5,294,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,37,110,30,111,35,60,42"/>
+<area shape="rect" id="Node000003" href="$classInvoker.html#ab18ed95c8456fbd32c24ab2613c88fd9" title="Executes added commands." alt="" coords="108,55,311,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,44,103,50,102,55,60,50"/>
+</map>

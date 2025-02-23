@@ -10,6 +10,43 @@
 #include "single_receiver.hpp"
 #include "update_command.hpp"
 
+/**
+Component diagram for Command pattern
+
+@note Will be shown only if PlantUML is activated
+
+@startuml
+component Client
+component Invoker
+
+interface Receiver
+component ContainerReceiver
+component SingleReceiver
+
+interface Command
+component CreateCommand
+component ReadCommand
+component UpdateCommand
+component DeleteCommand
+
+Command <|.up. CreateCommand
+Command <|.up. ReadCommand
+Command <|.up. UpdateCommand
+Command <|.up. DeleteCommand
+
+Receiver <|.down. ContainerReceiver
+Receiver <|.down. SingleReceiver
+
+Client <- Receiver : Get Response
+Command -down-> Receiver : Operation params
+Client -up-> Invoker : Set Command
+Invoker -> Command : Initiate request
+
+@enduml
+
+@see Invoker, Command, Receiver
+*/
+
 int main() {
   const auto firstId = "first";
   const auto secondId = "second";

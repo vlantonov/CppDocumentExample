@@ -8,6 +8,16 @@ project(CppProjectSample
 
 find_package(Doxygen REQUIRED dot)
 
+# https://gitlab.irit.fr/storm/repos/radium/librendering/-/blob/master/doc/CMakeLists.txt
+find_file (PLANTUML_JARFILE
+           NAMES plantuml.jar
+           PATH_SUFFIXES PlantUML plantuml Plantuml
+           PATHS /usr/share/ /usr/local/share/ /usr/local/bin /opt/local/share/java/ c/Program\ Files*
+)
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(plantuml DEFAULT_MSG PLANTUML_JARFILE)
+
 set(DOXYGEN_PROJECT_NAME          "C++ Document Example")
 set(DOXYGEN_PROJECT_BRIEF         "Simple example about how to create C++ project documentation with Doxygen")
 set(DOXYGEN_OUTPUT_DIRECTORY      ${PROJECT_BINARY_DIR}/cmake_generated)
@@ -30,6 +40,11 @@ set(DOXYGEN_CALL_GRAPH             YES)
 set(DOXYGEN_CALLER_GRAPH           YES)
 set(DOXYGEN_DISABLE_INDEX          YES)
 set(DOXYGEN_GENERATE_TREEVIEW      YES)
+
+# Generate PlantUML diagrams
+if (PLANTUML_JARFILE)
+set(DOXYGEN_PLANTUML_JAR_PATH      ${PLANTUML_JARFILE})
+endif ()
 
 doxygen_add_docs(docs_target
   ${PROJECT_SOURCE_DIR}

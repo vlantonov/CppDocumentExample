@@ -106,9 +106,6 @@ Use `@includedbygraph` , `@hideincludedbygraph`, `@callgraph` and `@hidecallgrap
 * `@post <DESCR>` Post conditions
 * `@return <DESCR>` Description of return value or type.
 
-### Code Blocks
-* `@code … <C++-Code>… @encode` C++ code example.
-
 ### Miscellaneous
 * `@remark` Additional side-notes
 * `@note`	Insert additional note

@@ -114,6 +114,35 @@ Use `@includedbygraph` , `@hideincludedbygraph`, `@callgraph` and `@hidecallgrap
 * `@li` Bullet point
 * `@todo <TODO-NOTE>` TODO annotation, reminders about what is still needs to be done.
 
+## PlantUML
+
+### Install
+```bash
+sudo apt install plantuml
+```
+
+### Setup
+* Required: `PLANTUML_JAR_PATH`
+* Optional: `PLANTUML_CFG_FILE`, `PLANTUML_INCLUDE_PATH`
+
+### Usage
+```
+/**
+@startuml
+Alice -> Bob : Hello
+@enduml
+*/
+```
+
+### References
+* [PlantUML](https://plantuml.com/)
+* [PlantUML : Doxygen](https://plantuml.com/doxygen)
+* [Doxygen : PlantUML](https://www.doxygen.nl/manual/commands.html#cmdstartuml)
+* [CMake FindPlantUML](https://cmake-tools.readthedocs.io/en/feature-plantuml/find_plantuml.html)
+* [Adding UML Diagrams to Doxygen documentation](https://arwedus.wordpress.com/2019/09/12/adding-uml-diagrams-to-doxygen-documentation/)
+* [Creating C4 and UML Diagrams Using PlantUML with VSCode Extension](https://medium.com/@robertdennyson/creating-c4-and-uml-diagrams-using-plantuml-with-vscode-extension-90032a21ec43)
+* <https://github.com/jitsuCM/doxygraph>
+
 ## Doxygen CMake target
 ```bash
 find_package(Doxygen REQUIRED dot)

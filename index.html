@@ -188,6 +188,75 @@ Recipe to generate generate call/caller graph</h2>
 <div class="line">EXTRACT_ANON_NSPACES   = YES</div>
 </div><!-- fragment --><p> Use <code>@includedbygraph</code> , <code>@hideincludedbygraph</code>, <code>@callgraph</code> and <code>@hidecallgraph</code> to control the graph preparation.</p>
 <h1><a class="anchor" id="autotoc_md11"></a>
+Useful Doxygen tags</h1>
+<h2><a class="anchor" id="autotoc_md12"></a>
+File</h2>
+<ul>
+<li><code>@file &lt;FILENAME&gt;</code> File Name</li>
+<li><code>@author &lt;AUTHOR_NAME&gt;</code> Author name</li>
+<li><code>@brief &lt;BRIEF&gt;</code> Short description</li>
+<li><code>@date &lt;DATE&gt;</code> Date</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md13"></a>
+General</h2>
+<ul>
+<li><code>@brief</code> Brief description of class or function (fits a single line)</li>
+<li><code>@details</code> Details about class or function</li>
+<li><code>@author &lt;AUTHOR NAME&gt;</code> Insert author name</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md14"></a>
+Function Or Method Documentation</h2>
+<ul>
+<li><code>@param &lt;PARAM&gt; &lt;DESCR&gt;</code> Function or method parameter description</li>
+<li><code>@param[in] &lt;PARAM&gt; &lt;DESCR&gt;</code> Input parameter (C-function)</li>
+<li><code>@param[out] &lt;PARAM&gt; &lt;DESCR&gt;</code> Output paramter of C-style function that returns multiple values</li>
+<li><code>@param[in, out] &lt;PARAM&gt; &lt;DESCR&gt;</code> Parameter used for both input and output in a C-style function.</li>
+<li><code>@tparam &lt;PARAM&gt; &lt;DESCR&gt;</code> Template type parameter</li>
+<li><code>@trhow &lt;EXCEP-DESCR&gt;</code> Specify exceptions that a function can throw</li>
+<li><code>@pre &lt;DESCR&gt;</code> Pre conditions</li>
+<li><code>@post &lt;DESCR&gt;</code> Post conditions</li>
+<li><code>@return &lt;DESCR&gt;</code> Description of return value or type.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md15"></a>
+Miscellaneous</h2>
+<ul>
+<li><code>@remark</code> Additional side-notes</li>
+<li><code>@note</code> Insert additional note</li>
+<li><code>@warning</code></li>
+<li><code>@see SomeClass::Method</code> Reference to some class, method, or web site</li>
+<li><code>@li</code> Bullet point</li>
+<li><code>@todo &lt;TODO-NOTE&gt;</code> TODO annotation, reminders about what is still needs to be done.</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md16"></a>
+PlantUML</h1>
+<h2><a class="anchor" id="autotoc_md17"></a>
+Install</h2>
+<div class="fragment"><div class="line">sudo apt install plantuml</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md18"></a>
+Setup</h2>
+<ul>
+<li>Required: <code>PLANTUML_JAR_PATH</code></li>
+<li>Optional: <code>PLANTUML_CFG_FILE</code>, <code>PLANTUML_INCLUDE_PATH</code></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md19"></a>
+Usage</h2>
+<div class="fragment"><div class="line">/**</div>
+<div class="line">@startuml</div>
+<div class="line">Alice -&gt; Bob : Hello</div>
+<div class="line">@enduml</div>
+<div class="line">*/</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md20"></a>
+References</h2>
+<ul>
+<li><a href="https://plantuml.com/">PlantUML</a></li>
+<li><a href="https://plantuml.com/doxygen">PlantUML : Doxygen</a></li>
+<li><a href="https://www.doxygen.nl/manual/commands.html#cmdstartuml">Doxygen : PlantUML</a></li>
+<li><a href="https://cmake-tools.readthedocs.io/en/feature-plantuml/find_plantuml.html">CMake FindPlantUML</a></li>
+<li><a href="https://arwedus.wordpress.com/2019/09/12/adding-uml-diagrams-to-doxygen-documentation/">Adding UML Diagrams to Doxygen documentation</a></li>
+<li><a href="https://medium.com/@robertdennyson/creating-c4-and-uml-diagrams-using-plantuml-with-vscode-extension-90032a21ec43">Creating C4 and UML Diagrams Using PlantUML with VSCode Extension</a></li>
+<li><a href="https://github.com/jitsuCM/doxygraph">https://github.com/jitsuCM/doxygraph</a></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md21"></a>
 Doxygen CMake target</h1>
 <div class="fragment"><div class="line">find_package(Doxygen REQUIRED dot)</div>
 <div class="line"> </div>
@@ -204,7 +273,7 @@ Doxygen CMake target</h1>
 <li><a href="https://vicrucann.github.io/tutorials/quick-cmake-doxygen/">Quick setup to use Doxygen with CMake</a></li>
 <li><a href="https://stackoverflow.com/questions/34878276/build-doxygen-from-cmake-script">Build doxygen from CMake script</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md12"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Publish with GitHub action</h1>
 <ul>
 <li>Create the github action: <code>.github/workflows/doxygen_publish.yml</code></li>
@@ -215,7 +284,7 @@ Publish with GitHub action</h1>
 <li>Set <code>Branch</code> to <code>gh-pages</code> and <code>/(root)</code></li>
 <li>Resulting site is <a href="https://vlantonov.github.io/CppDocumentExample/">https://vlantonov.github.io/CppDocumentExample/</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Publish with Gitlab Pages</h1>
 <ul>
 <li>Follow the steps in <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a></li>
@@ -224,7 +293,7 @@ Publish with Gitlab Pages</h1>
 <li>Go to <code>Settings &gt; General &gt; Visibility</code> and select <code>Everyone</code> in pages section.</li>
 <li>Resulting site is <a href="https://vladiant.gitlab.io/CppDocumentExample/">https://vladiant.gitlab.io/CppDocumentExample/</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md24"></a>
 Doxygen C++ examples</h1>
 <ul>
 <li><a href="https://codeyarns.com/tech/2014-06-18-how-to-configure-doxygen-for-c-code.html#gsc.tab=0">How to configure Doxygen for C++ code</a></li>
@@ -235,7 +304,7 @@ Doxygen C++ examples</h1>
 <li><a href="https://medium.com/macoclock/doxygen-with-graphviz-to-generate-call-graph-on-mac-f9a3160db641">Doxygen with Graphviz to generate call graph on Mac</a></li>
 <li><a href="https://darkognu.eu/programming/tutorials/doxygen_tutorial_cpp/">Doxygen C++ documentation for complete beginners</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 Command Pattern References</h1>
 <ul>
 <li><a href="https://refactoring.guru/design-patterns/command/">refactoring.guru:Command</a></li>
@@ -244,14 +313,14 @@ Command Pattern References</h1>
 <li><a href="https://www.geeksforgeeks.org/repository-design-pattern/">Repository Design Pattern</a></li>
 <li><a href="https://deviq.com/design-patterns/repository-pattern">Repository Pattern</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Technical References</h1>
 <ul>
 <li><a href="https://www.modernescpp.com/index.php/the-copy-and-swap-idiom/">The Copy-and-Swap Idiom</a></li>
 <li><a href="https://www.fluentcpp.com/2020/09/18/what-stdexchange-does-and-how-to-remember-it/">What std::exchange does, and how to remember it</a></li>
 <li><a href="https://www.fluentcpp.com/2020/09/25/stdexchange-patterns-fast-safe-expressive-and-probably-underused/">std::exchange Patterns: Fast, Safe, Expressive, and Probably Underused</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 Example Document pages</h1>
 <ul>
 <li><a href="https://github.com/nullromo/doxygen-example">https://github.com/nullromo/doxygen-example</a></li>

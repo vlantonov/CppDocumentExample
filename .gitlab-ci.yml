@@ -7,7 +7,7 @@ build-documentation:
   image: ubuntu:noble
   before_script:
     - apt update
-    - apt install -y build-essential cmake doxygen graphviz
+    - apt install -y build-essential cmake doxygen graphviz plantuml
   script:
     - echo "Rendering HTML..."
     - mkdir build

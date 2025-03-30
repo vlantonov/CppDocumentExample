@@ -28,7 +28,6 @@ set(DOXYGEN_EXTRACT_STATIC        YES)
 set(DOXYGEN_GENERATE_HTML         YES)
 set(DOXYGEN_GENERATE_LATEX        NO)
 set(DOXYGEN_RECURSIVE             YES)
-set(DOXYGEN_GENERATE_LATEX        NO)
 set(DOXYGEN_USE_MDFILE_AS_MAINPAGE README.md)
 
 # Show used smart pointers, STL containers

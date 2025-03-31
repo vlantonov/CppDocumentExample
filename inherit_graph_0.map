@@ -6,6 +6,6 @@
 <area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="108,81,144,75,145,80,109,86"/>
 <area shape="rect" id="Node000003" href="$classReadCommand.html" title="Read Command Implements additional method to read stored Elements." alt="" coords="149,104,272,129"/>
 <area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="109,99,150,105,149,110,108,104"/>
-<area shape="rect" id="Node000004" href="$classUpdateCommand.html" title="Update Command Updates an Element in storage." alt="" coords="143,153,279,179"/>
+<area shape="rect" id="Node000004" href="$classUpdateCommand.html" title="Update Command Implements additional method to update stored Elements." alt="" coords="143,153,279,179"/>
 <area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="87,110,144,138,174,151,172,156,142,143,85,114"/>
 </map>

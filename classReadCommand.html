@@ -137,6 +137,7 @@ Collaboration diagram for ReadCommand:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a254e82ce19555c15526f91dd4d542738" id="r_a254e82ce19555c15526f91dd4d542738"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReadCommand.html#a254e82ce19555c15526f91dd4d542738">ReadCommand</a> (std::weak_ptr&lt; <a class="el" href="classReceiver.html">Receiver</a> &gt; aReceiver)</td></tr>
+<tr class="memdesc:a254e82ce19555c15526f91dd4d542738"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read <a class="el" href="classCommand.html" title="Interface of method for command execution.">Command</a> constructor.  <br /></td></tr>
 <tr class="separator:a254e82ce19555c15526f91dd4d542738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac62a3a6d2edb1dfe4b1bed2cc68b64b7" id="r_ac62a3a6d2edb1dfe4b1bed2cc68b64b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReadCommand.html#ac62a3a6d2edb1dfe4b1bed2cc68b64b7">~ReadCommand</a> () override=default</td></tr>
 <tr class="separator:ac62a3a6d2edb1dfe4b1bed2cc68b64b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -156,10 +157,10 @@ Private Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ae8ecb7994aac840aab541933e5edfea6" id="r_ae8ecb7994aac840aab541933e5edfea6"><td class="memItemLeft" align="right" valign="top">std::weak_ptr&lt; <a class="el" href="classReceiver.html">Receiver</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReadCommand.html#ae8ecb7994aac840aab541933e5edfea6">mReceiver</a></td></tr>
-<tr class="memdesc:ae8ecb7994aac840aab541933e5edfea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object to delegate complex data operations Commands can delegate to any methods of a receiver.  <br /></td></tr>
+<tr class="memdesc:ae8ecb7994aac840aab541933e5edfea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object to delegate complex data operations.  <br /></td></tr>
 <tr class="separator:ae8ecb7994aac840aab541933e5edfea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad293805fbd682cee422c3d2abc9e2b40" id="r_ad293805fbd682cee422c3d2abc9e2b40"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classElement.html">Element</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classReadCommand.html#ad293805fbd682cee422c3d2abc9e2b40">mReads</a></td></tr>
-<tr class="memdesc:ad293805fbd682cee422c3d2abc9e2b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context data Required for launching the receiver's methods.  <br /></td></tr>
+<tr class="memdesc:ad293805fbd682cee422c3d2abc9e2b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context data.  <br /></td></tr>
 <tr class="separator:ad293805fbd682cee422c3d2abc9e2b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -180,6 +181,14 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Read <a class="el" href="classCommand.html" title="Interface of method for command execution.">Command</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">aReceiver</td><td>Object to delegate execution </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -286,7 +295,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Context data Required for launching the receiver's methods. </p>
+<p>Context data. </p>
+<p>Required for launching the receiver's methods. </p>
 
 </div>
 </div>
@@ -310,8 +320,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Object to delegate complex data operations Commands can delegate to any methods of a receiver. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classReceiver.html" title="Interface to business logic.">Receiver</a> </dd></dl>
+<p>Object to delegate complex data operations. </p>
+<p>Commands can delegate to any methods of a receiver. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="classReceiver.html" title="Interface to business logic.">Receiver</a> </dd></dl>
 
 </div>
 </div>

@@ -18,5 +18,6 @@ class SingleReceiver : public Receiver {
   bool update(const Element& aUpdated) override;
   bool remove(const Element& aRemoved) override;
 
+  /// @brief Stored element
   std::optional<Element> mStored;
 };

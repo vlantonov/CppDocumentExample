@@ -4,6 +4,7 @@
 
 /// @file Short explanation about this file - container receiver definitions
 /// @author Vladislav Antonov
+/// @date 2025
 
 bool ContainerReceiver::create(std::string_view aData) {
   const auto [it, isCreated] = mContainer.emplace(aData);

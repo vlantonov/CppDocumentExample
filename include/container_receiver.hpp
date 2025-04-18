@@ -6,6 +6,7 @@
 
 /// @file Short explanation about this file - container receiver declarations
 /// @author Vladislav Antonov
+/// @date 2025
 
 ///
 /// @brief Implements multiple element storage.

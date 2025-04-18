@@ -3,6 +3,7 @@
 #include "element.hpp"
 
 /// @file Short explanation about this file - container receiver definitions
+/// @author Vladislav Antonov
 
 bool ContainerReceiver::create(std::string_view aData) {
   const auto [it, isCreated] = mContainer.emplace(aData);

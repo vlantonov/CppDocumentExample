@@ -5,6 +5,7 @@
 #include "receiver.hpp"
 
 /// @file Short explanation about this file - container receiver declarations
+/// @author Vladislav Antonov
 
 ///
 /// @brief Implements multiple element storage.

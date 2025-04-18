@@ -6,6 +6,11 @@
 /// @author Vladislav Antonov
 /// @date 2025
 
+///
+/// This comment is written inside the source file.
+/// The interface comments are overwritten in implementation.
+/// Appears as separate paragraph after header comments.
+///
 bool ContainerReceiver::create(std::string_view aData) {
   const auto [it, isCreated] = mContainer.emplace(aData);
   return isCreated;

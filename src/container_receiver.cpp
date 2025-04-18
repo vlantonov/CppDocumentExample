@@ -13,6 +13,7 @@
 ///
 bool ContainerReceiver::create(std::string_view aData) {
   const auto [it, isCreated] = mContainer.emplace(aData);
+  /// This comment is inside the source of the method.
   return isCreated;
 }
 

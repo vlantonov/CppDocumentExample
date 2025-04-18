@@ -13,6 +13,10 @@ std::vector<Element> SingleReceiver::read() {
   return {};
 }
 
+///
+/// This comment is written inside the source file.
+/// Overrides the interface header comments.
+///
 bool SingleReceiver::update(const Element& aUpdated) {
   if (!mStored) {
     return false;

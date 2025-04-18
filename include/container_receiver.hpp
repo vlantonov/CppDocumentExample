@@ -4,6 +4,8 @@
 
 #include "receiver.hpp"
 
+/// @file Short explanation about this file - container receiver declarations
+
 ///
 /// @brief Implements multiple element storage.
 /// Container stores multiple ordered unique elements

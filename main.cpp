@@ -51,6 +51,7 @@ Invoker -> Command : Initiate request
 /// @details Main entry of executable - set by details command
 /// @remark Remark example
 /// @note Note example
+/// @warning Warning example
 int main() {
   const auto firstId = "first";
   const auto secondId = "second";

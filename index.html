@@ -227,25 +227,34 @@ Miscellaneous</h2>
 <li><code>@li</code> Bullet point</li>
 <li><code>@todo &lt;TODO-NOTE&gt;</code> TODO annotation, reminders about what is still needs to be done.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md16"></a>
+Clang Compiler flags</h2>
+<ul>
+<li><code>-Wdocumentation-deprecated-sync</code> <code>@deprecated</code> does not match <code>[[deprecated]]</code></li>
+<li><code>-Wdocumentation-html</code> Check HTML syntax</li>
+<li><code>-Wdocumentation</code> All of the above</li>
+<li><code>-Wdocumentation-unknown-command</code> Warns for unknown Doxygen tags</li>
+<li><code>-Wdocumentation-pedantic</code> Strict check of Doxygen syntax + unknown</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md17"></a>
 PlantUML</h1>
-<h2><a class="anchor" id="autotoc_md17"></a>
+<h2><a class="anchor" id="autotoc_md18"></a>
 Install</h2>
 <div class="fragment"><div class="line">sudo apt install plantuml</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md18"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md19"></a>
 Setup</h2>
 <ul>
 <li>Required: <code>PLANTUML_JAR_PATH</code></li>
 <li>Optional: <code>PLANTUML_CFG_FILE</code>, <code>PLANTUML_INCLUDE_PATH</code></li>
 </ul>
-<h2><a class="anchor" id="autotoc_md19"></a>
+<h2><a class="anchor" id="autotoc_md20"></a>
 Usage</h2>
 <div class="fragment"><div class="line">/**</div>
 <div class="line">@startuml</div>
 <div class="line">Alice -&gt; Bob : Hello</div>
 <div class="line">@enduml</div>
 <div class="line">*/</div>
-</div><!-- fragment --><h2><a class="anchor" id="autotoc_md20"></a>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md21"></a>
 References</h2>
 <ul>
 <li><a href="https://plantuml.com/">PlantUML</a></li>
@@ -255,8 +264,10 @@ References</h2>
 <li><a href="https://arwedus.wordpress.com/2019/09/12/adding-uml-diagrams-to-doxygen-documentation/">Adding UML Diagrams to Doxygen documentation</a></li>
 <li><a href="https://medium.com/@robertdennyson/creating-c4-and-uml-diagrams-using-plantuml-with-vscode-extension-90032a21ec43">Creating C4 and UML Diagrams Using PlantUML with VSCode Extension</a></li>
 <li><a href="https://github.com/jitsuCM/doxygraph">https://github.com/jitsuCM/doxygraph</a></li>
+<li><a href="https://clang.llvm.org/docs/DiagnosticsReference.html#wdocumentation">Clang Wdocumentation</a></li>
+<li><a href="https://clang.llvm.org/docs/UsersManual.html#comment-parsing-options">Clang Compiler User’s Manual: Comment Parsing Options</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md21"></a>
+<h1><a class="anchor" id="autotoc_md22"></a>
 Doxygen CMake target</h1>
 <div class="fragment"><div class="line">find_package(Doxygen REQUIRED dot)</div>
 <div class="line"> </div>
@@ -273,7 +284,7 @@ Doxygen CMake target</h1>
 <li><a href="https://vicrucann.github.io/tutorials/quick-cmake-doxygen/">Quick setup to use Doxygen with CMake</a></li>
 <li><a href="https://stackoverflow.com/questions/34878276/build-doxygen-from-cmake-script">Build doxygen from CMake script</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md22"></a>
+<h1><a class="anchor" id="autotoc_md23"></a>
 Publish with GitHub action</h1>
 <ul>
 <li>Create the github action: <code>.github/workflows/doxygen_publish.yml</code></li>
@@ -284,7 +295,7 @@ Publish with GitHub action</h1>
 <li>Set <code>Branch</code> to <code>gh-pages</code> and <code>/(root)</code></li>
 <li>Resulting site is <a href="https://vlantonov.github.io/CppDocumentExample/">https://vlantonov.github.io/CppDocumentExample/</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md23"></a>
+<h1><a class="anchor" id="autotoc_md24"></a>
 Publish with Gitlab Pages</h1>
 <ul>
 <li>Follow the steps in <a href="https://docs.gitlab.com/ee/user/project/pages/">GitLab Pages</a></li>
@@ -293,7 +304,7 @@ Publish with Gitlab Pages</h1>
 <li>Go to <code>Settings &gt; General &gt; Visibility</code> and select <code>Everyone</code> in pages section.</li>
 <li>Resulting site is <a href="https://vladiant.gitlab.io/CppDocumentExample/">https://vladiant.gitlab.io/CppDocumentExample/</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md24"></a>
+<h1><a class="anchor" id="autotoc_md25"></a>
 Doxygen C++ examples</h1>
 <ul>
 <li><a href="https://codeyarns.com/tech/2014-06-18-how-to-configure-doxygen-for-c-code.html#gsc.tab=0">How to configure Doxygen for C++ code</a></li>
@@ -304,7 +315,7 @@ Doxygen C++ examples</h1>
 <li><a href="https://medium.com/macoclock/doxygen-with-graphviz-to-generate-call-graph-on-mac-f9a3160db641">Doxygen with Graphviz to generate call graph on Mac</a></li>
 <li><a href="https://darkognu.eu/programming/tutorials/doxygen_tutorial_cpp/">Doxygen C++ documentation for complete beginners</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md25"></a>
+<h1><a class="anchor" id="autotoc_md26"></a>
 Command Pattern References</h1>
 <ul>
 <li><a href="https://refactoring.guru/design-patterns/command/">refactoring.guru:Command</a></li>
@@ -313,14 +324,14 @@ Command Pattern References</h1>
 <li><a href="https://www.geeksforgeeks.org/repository-design-pattern/">Repository Design Pattern</a></li>
 <li><a href="https://deviq.com/design-patterns/repository-pattern">Repository Pattern</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md26"></a>
+<h1><a class="anchor" id="autotoc_md27"></a>
 Technical References</h1>
 <ul>
 <li><a href="https://www.modernescpp.com/index.php/the-copy-and-swap-idiom/">The Copy-and-Swap Idiom</a></li>
 <li><a href="https://www.fluentcpp.com/2020/09/18/what-stdexchange-does-and-how-to-remember-it/">What std::exchange does, and how to remember it</a></li>
 <li><a href="https://www.fluentcpp.com/2020/09/25/stdexchange-patterns-fast-safe-expressive-and-probably-underused/">std::exchange Patterns: Fast, Safe, Expressive, and Probably Underused</a></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md27"></a>
+<h1><a class="anchor" id="autotoc_md28"></a>
 Example Document pages</h1>
 <ul>
 <li><a href="https://github.com/nullromo/doxygen-example">https://github.com/nullromo/doxygen-example</a></li>

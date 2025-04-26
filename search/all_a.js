@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['pages_0',['pages',['../index.html#autotoc_md27',1,'Example Document pages'],['../index.html#autotoc_md23',1,'Publish with Gitlab Pages']]],
-  ['pattern_20references_1',['Command Pattern References',['../index.html#autotoc_md25',1,'']]],
-  ['plantuml_2',['PlantUML',['../index.html#autotoc_md16',1,'']]],
-  ['points_3',['Entrance points',['../index.html#autotoc_md7',1,'']]],
-  ['publish_20with_20github_20action_4',['Publish with GitHub action',['../index.html#autotoc_md22',1,'']]],
-  ['publish_20with_20gitlab_20pages_5',['Publish with Gitlab Pages',['../index.html#autotoc_md23',1,'']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../classElement.html#aa8c2a41306d33196dda2c1eb16c3569c',1,'Element']]],
+  ['operator_3c_3d_3e_1',['operator&lt;=&gt;',['../classElement.html#a60c27ed4c391d19731f31bf7672cd57d',1,'Element']]],
+  ['operator_3d_2',['operator=',['../classElement.html#a3db8ada8c8ea25d2b404728511db633e',1,'Element::operator=(const Element &amp;aOther)'],['../classElement.html#a2264c4d5a6ede1fdf83fcb7e44a45c6c',1,'Element::operator=(Element &amp;&amp;aOther) noexcept']]],
+  ['or_20method_20documentation_3',['Function Or Method Documentation',['../index.html#autotoc_md14',1,'']]]
 ];

@@ -48,6 +48,7 @@ Invoker -> Command : Initiate request
 */
 
 /// @author Vladislav Antonov
+/// @details Main entry of executable - set by details command
 int main() {
   const auto firstId = "first";
   const auto secondId = "second";

@@ -53,6 +53,8 @@ Invoker -> Command : Initiate request
 /// @note Note example
 /// @warning Warning example
 /// @todo TODO example
+/// @pre Precondition example
+/// @post Poscondition example
 int main() {
   const auto firstId = "first";
   const auto secondId = "second";

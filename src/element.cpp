@@ -13,7 +13,7 @@ Element::Element(std::string_view aData) : mData{std::move(aData)} {
   std::cout << "Element arg ctor " << this << " " << mData << '\n';
 }
 
-Element::~Element() {
+Element::~Element() noexcept {
   std::cout << "~Element " << this << " " << mData << '\n';
 }
 

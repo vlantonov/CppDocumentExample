@@ -16,3 +16,5 @@ void ReadCommand::execute() {
     std::cout << "ReadCommand execution result size: " << mReads.size() << '\n';
   }
 }
+
+std::vector<Element> ReadCommand::getReads() const { return mReads; }

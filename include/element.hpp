@@ -59,7 +59,7 @@ class Element {
   /// Consider using the default.
   /// Should be consistent to copy constructor.
   /// @param aOther Object to copy from
-  /// @return
+  /// @return Copied element
   Element& operator=(const Element& aOther);
 
   ///
@@ -71,7 +71,7 @@ class Element {
   /// (Separated paragraph by empty line) Should be consistent to move
   /// constructor.
   /// @param aOther Object to move
-  /// @return
+  /// @return Moved element
   Element& operator=(Element&& aOther) noexcept;
 
   ///

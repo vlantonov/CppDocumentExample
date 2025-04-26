@@ -20,7 +20,7 @@ class ReadCommand : public Command {
 
   ~ReadCommand() override = default;
 
-  std::vector<Element> getReads() const { return mReads; }
+  std::vector<Element> getReads() const;
 
  private:
   void execute() override;

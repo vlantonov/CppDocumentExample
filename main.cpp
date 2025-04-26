@@ -52,6 +52,7 @@ Invoker -> Command : Initiate request
 /// @remark Remark example
 /// @note Note example
 /// @warning Warning example
+/// @todo TODO example
 int main() {
   const auto firstId = "first";
   const auto secondId = "second";

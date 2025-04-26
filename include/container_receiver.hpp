@@ -14,6 +14,7 @@
 ///
 class ContainerReceiver : public Receiver {
  public:
+  /// @throw std::exception Should not throw
   ~ContainerReceiver() override = default;
 
  private:

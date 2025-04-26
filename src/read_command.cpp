@@ -17,4 +17,5 @@ void ReadCommand::execute() {
   }
 }
 
+/// @bug This method should not be in header when compiled with clang
 std::vector<Element> ReadCommand::getReads() const { return mReads; }

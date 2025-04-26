@@ -29,7 +29,7 @@ class ContainerReceiver : public Receiver {
   ///
   /// Method is private as it is meant to be accessed only by base interface
   /// @see Element
-  /// @return
+  /// @return List of element read
   std::vector<Element> read() override;
 
   /// @brief Update storage with element
@@ -37,7 +37,7 @@ class ContainerReceiver : public Receiver {
   /// Method is private as it is meant to be accessed only by base interface
   /// @param aUpdated Element to update in storage
   /// @see Element
-  /// @return
+  /// @return True if element is successfully updated
   bool update(const Element& aUpdated) override;
 
   /// @brief Remove element from storage

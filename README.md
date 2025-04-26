@@ -114,6 +114,13 @@ Use `@includedbygraph` , `@hideincludedbygraph`, `@callgraph` and `@hidecallgrap
 * `@li` Bullet point
 * `@todo <TODO-NOTE>` TODO annotation, reminders about what is still needs to be done.
 
+### Clang Compiler flags
+* `-Wdocumentation-deprecated-sync ` `@deprecated` does not match `[[deprecated]]`
+* `-Wdocumentation-html`	Check HTML syntax
+* `-Wdocumentation` All of the above
+* `-Wdocumentation-unknown-command` Warns for unknown Doxygen tags
+* `-Wdocumentation-pedantic` Strict check of Doxygen syntax + unknown
+
 ## PlantUML
 
 ### Install
@@ -142,6 +149,8 @@ Alice -> Bob : Hello
 * [Adding UML Diagrams to Doxygen documentation](https://arwedus.wordpress.com/2019/09/12/adding-uml-diagrams-to-doxygen-documentation/)
 * [Creating C4 and UML Diagrams Using PlantUML with VSCode Extension](https://medium.com/@robertdennyson/creating-c4-and-uml-diagrams-using-plantuml-with-vscode-extension-90032a21ec43)
 * <https://github.com/jitsuCM/doxygraph>
+* [Clang Wdocumentation](https://clang.llvm.org/docs/DiagnosticsReference.html#wdocumentation)
+* [Clang Compiler User’s Manual: Comment Parsing Options](https://clang.llvm.org/docs/UsersManual.html#comment-parsing-options)
 
 ## Doxygen CMake target
 ```bash

@@ -47,6 +47,7 @@ Invoker -> Command : Initiate request
 @see Invoker, Command, Receiver
 */
 
+/// @author Vladislav Antonov
 int main() {
   const auto firstId = "first";
   const auto secondId = "second";

@@ -52,7 +52,6 @@ Invoker -> Command : Initiate request
 /// @remark Remark example
 /// @note Note example
 /// @warning Warning example
-/// @todo TODO example
 /// @pre Precondition example
 /// @post Poscondition example
 int main() {
@@ -68,6 +67,7 @@ int main() {
   auto firstReceiver = std::make_shared<SingleReceiver>();
   auto secondReceiver = std::make_shared<ContainerReceiver>();
 
+  /// @todo Should be extracted as example
   {
     std::cout << "SingleReceiver start\n";
 
@@ -92,6 +92,7 @@ int main() {
     std::cout << "SingleReceiver end\n";
   }
 
+  /// @todo Should be extracted as another example
   {
     std::cout << "ContainerReceiver start\n";
 

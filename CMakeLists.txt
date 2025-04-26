@@ -86,7 +86,7 @@ target_compile_options(
     PRIVATE
         $<$<CXX_COMPILER_ID:MSVC>:/W4 /WX>
         $<$<NOT:$<CXX_COMPILER_ID:MSVC>>:-Wall -Wextra -Wpedantic -Werror>
-        $<$<CXX_COMPILER_ID:Clang>:-Wdocumentation>
+        $<$<CXX_COMPILER_ID:Clang>:-Wdocumentation -Wdocumentation-pedantic>
 )
 
 target_include_directories(

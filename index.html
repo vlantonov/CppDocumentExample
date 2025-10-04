@@ -317,10 +317,45 @@ Doxygen C++ examples</h1>
 </ul>
 <h1><a class="anchor" id="autotoc_md26"></a>
 Command Pattern References</h1>
-<div class="plantumlgraph">
+<ul>
+<li>plantUML diagram <div class="plantumlgraph">
 <img src="inline_umlgraph_2.png" />
 </div>
-<ul>
+</li>
+<li>Mermaid diagram <div class="fragment"><div class="line">classDiagram</div>
+<div class="line"> </div>
+<div class="line">class Client</div>
+<div class="line">class Invoker</div>
+<div class="line"> </div>
+<div class="line">class Receiver {</div>
+<div class="line">    &lt;&lt;interface&gt;&gt;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">class ContainerReceiver</div>
+<div class="line">class SingleReceiver</div>
+<div class="line"> </div>
+<div class="line">class Command {</div>
+<div class="line">    &lt;&lt;interface&gt;&gt;</div>
+<div class="line">}</div>
+<div class="line"> </div>
+<div class="line">class CreateCommand</div>
+<div class="line">class ReadCommand</div>
+<div class="line">class UpdateCommand</div>
+<div class="line">class DeleteCommand</div>
+<div class="line"> </div>
+<div class="line">Command &lt;|.. CreateCommand</div>
+<div class="line">Command &lt;|.. ReadCommand</div>
+<div class="line">Command &lt;|.. UpdateCommand</div>
+<div class="line">Command &lt;|.. DeleteCommand</div>
+<div class="line"> </div>
+<div class="line">Receiver &lt;|.. ContainerReceiver</div>
+<div class="line">Receiver &lt;|.. SingleReceiver</div>
+<div class="line"> </div>
+<div class="line">Client &lt;-- Receiver : Get Response</div>
+<div class="line">Command --&gt; Receiver : Operation params</div>
+<div class="line">Client --&gt; Invoker : Set Command</div>
+<div class="line">Invoker --&gt; Command : Initiate request</div>
+</div><!-- fragment --></li>
 <li><a href="https://refactoring.guru/design-patterns/command/">refactoring.guru:Command</a></li>
 <li><a href="https://sourcemaking.com/design_patterns/command">Command Design Pattern</a></li>
 <li><a href="https://celerdata.com/glossary/create-read-update-and-delete-crud">What Is CRUD (Create, Read, Update, and Delete)?</a></li>

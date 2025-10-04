@@ -195,7 +195,7 @@ doxygen_add_docs(docs_target
 * [Doxygen C++ documentation for complete beginners](https://darkognu.eu/programming/tutorials/doxygen_tutorial_cpp/)
 
 ## Command Pattern References
-
+* plantUML diagram
 ```plantuml
 component Client
 component Invoker
@@ -222,6 +222,43 @@ Client <- Receiver : Get Response
 Command -down-> Receiver : Operation params
 Client -up-> Invoker : Set Command
 Invoker -> Command : Initiate request
+```
+
+* Mermaid diagram
+```mermaid
+classDiagram
+
+class Client
+class Invoker
+
+class Receiver {
+    <<interface>>
+}
+
+class ContainerReceiver
+class SingleReceiver
+
+class Command {
+    <<interface>>
+}
+
+class CreateCommand
+class ReadCommand
+class UpdateCommand
+class DeleteCommand
+
+Command <|.. CreateCommand
+Command <|.. ReadCommand
+Command <|.. UpdateCommand
+Command <|.. DeleteCommand
+
+Receiver <|.. ContainerReceiver
+Receiver <|.. SingleReceiver
+
+Client <-- Receiver : Get Response
+Command --> Receiver : Operation params
+Client --> Invoker : Set Command
+Invoker --> Command : Initiate request
 ```
 
 * [refactoring.guru:Command](https://refactoring.guru/design-patterns/command/)

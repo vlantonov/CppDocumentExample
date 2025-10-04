@@ -195,6 +195,35 @@ doxygen_add_docs(docs_target
 * [Doxygen C++ documentation for complete beginners](https://darkognu.eu/programming/tutorials/doxygen_tutorial_cpp/)
 
 ## Command Pattern References
+
+```plantuml
+component Client
+component Invoker
+
+interface Receiver
+component ContainerReceiver
+component SingleReceiver
+
+interface Command
+component CreateCommand
+component ReadCommand
+component UpdateCommand
+component DeleteCommand
+
+Command <|.up. CreateCommand
+Command <|.up. ReadCommand
+Command <|.up. UpdateCommand
+Command <|.up. DeleteCommand
+
+Receiver <|.down. ContainerReceiver
+Receiver <|.down. SingleReceiver
+
+Client <- Receiver : Get Response
+Command -down-> Receiver : Operation params
+Client -up-> Invoker : Set Command
+Invoker -> Command : Initiate request
+```
+
 * [refactoring.guru:Command](https://refactoring.guru/design-patterns/command/)
 * [Command Design Pattern](https://sourcemaking.com/design_patterns/command)
 * [What Is CRUD (Create, Read, Update, and Delete)?](https://celerdata.com/glossary/create-read-update-and-delete-crud)

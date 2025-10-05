@@ -12,24 +12,25 @@ var index =
       [ "Source browsing", "index.html#autotoc_md9", null ],
       [ "Recipe to generate generate call/caller graph", "index.html#autotoc_md10", null ]
     ] ],
-    [ "Useful Doxygen tags", "index.html#autotoc_md11", [
-      [ "File", "index.html#autotoc_md12", null ],
-      [ "General", "index.html#autotoc_md13", null ],
-      [ "Function Or Method Documentation", "index.html#autotoc_md14", null ],
-      [ "Miscellaneous", "index.html#autotoc_md15", null ],
-      [ "Clang Compiler flags", "index.html#autotoc_md16", null ]
+    [ "Main page recipe", "index.html#autotoc_md11", null ],
+    [ "Useful Doxygen tags", "index.html#autotoc_md12", [
+      [ "File", "index.html#autotoc_md13", null ],
+      [ "General", "index.html#autotoc_md14", null ],
+      [ "Function Or Method Documentation", "index.html#autotoc_md15", null ],
+      [ "Miscellaneous", "index.html#autotoc_md16", null ],
+      [ "Clang Compiler flags", "index.html#autotoc_md17", null ]
     ] ],
-    [ "PlantUML", "index.html#autotoc_md17", [
-      [ "Install", "index.html#autotoc_md18", null ],
-      [ "Setup", "index.html#autotoc_md19", null ],
-      [ "Usage", "index.html#autotoc_md20", null ],
-      [ "References", "index.html#autotoc_md21", null ]
+    [ "PlantUML", "index.html#autotoc_md18", [
+      [ "Install", "index.html#autotoc_md19", null ],
+      [ "Setup", "index.html#autotoc_md20", null ],
+      [ "Usage", "index.html#autotoc_md21", null ],
+      [ "References", "index.html#autotoc_md22", null ]
     ] ],
-    [ "Doxygen CMake target", "index.html#autotoc_md22", null ],
-    [ "Publish with GitHub action", "index.html#autotoc_md23", null ],
-    [ "Publish with Gitlab Pages", "index.html#autotoc_md24", null ],
-    [ "Doxygen C++ examples", "index.html#autotoc_md25", null ],
-    [ "Command Pattern References", "index.html#autotoc_md26", null ],
-    [ "Technical References", "index.html#autotoc_md27", null ],
-    [ "Example Document pages", "index.html#autotoc_md28", null ]
+    [ "Doxygen CMake target", "index.html#autotoc_md23", null ],
+    [ "Publish with GitHub action", "index.html#autotoc_md24", null ],
+    [ "Publish with Gitlab Pages", "index.html#autotoc_md25", null ],
+    [ "Doxygen C++ examples", "index.html#autotoc_md26", null ],
+    [ "Command Pattern References", "index.html#autotoc_md27", null ],
+    [ "Technical References", "index.html#autotoc_md28", null ],
+    [ "Example Document pages", "index.html#autotoc_md29", null ]
 ];

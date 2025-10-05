@@ -7,8 +7,9 @@ var searchData=
   ['readme_2emd_4',['README.md',['../README_8md.html',1,'']]],
   ['receiver_5',['Receiver',['../classReceiver.html',1,'']]],
   ['receiver_2ehpp_6',['receiver.hpp',['../receiver_8hpp.html',1,'']]],
-  ['recipe_20to_20generate_20generate_20call_20caller_20graph_7',['Recipe to generate generate call/caller graph',['../index.html#autotoc_md10',1,'']]],
-  ['references_8',['references',['../index.html#autotoc_md26',1,'Command Pattern References'],['../index.html#autotoc_md21',1,'References'],['../index.html#autotoc_md27',1,'Technical References']]],
-  ['related_9',['Scope related',['../index.html#autotoc_md6',1,'']]],
-  ['remove_10',['remove',['../classContainerReceiver.html#a362023e8172ef1d26da3060551aa2d63',1,'ContainerReceiver::remove()'],['../classReceiver.html#ad961aa8cafd90c8eec021b821f72d9e6',1,'Receiver::remove()'],['../classSingleReceiver.html#af775339b7618c39586ae8ff9bdcc1d62',1,'SingleReceiver::remove()']]]
+  ['recipe_7',['Main page recipe',['../index.html#autotoc_md11',1,'']]],
+  ['recipe_20to_20generate_20generate_20call_20caller_20graph_8',['Recipe to generate generate call/caller graph',['../index.html#autotoc_md10',1,'']]],
+  ['references_9',['references',['../index.html#autotoc_md27',1,'Command Pattern References'],['../index.html#autotoc_md22',1,'References'],['../index.html#autotoc_md28',1,'Technical References']]],
+  ['related_10',['Scope related',['../index.html#autotoc_md6',1,'']]],
+  ['remove_11',['remove',['../classContainerReceiver.html#a362023e8172ef1d26da3060551aa2d63',1,'ContainerReceiver::remove()'],['../classReceiver.html#ad961aa8cafd90c8eec021b821f72d9e6',1,'Receiver::remove()'],['../classSingleReceiver.html#af775339b7618c39586ae8ff9bdcc1d62',1,'SingleReceiver::remove()']]]
 ];

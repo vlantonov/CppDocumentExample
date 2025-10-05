@@ -10,6 +10,32 @@
 #include "single_receiver.hpp"
 #include "update_command.hpp"
 
+///
+/// @mainpage Command Design Pattern Example
+/// Main page for the example
+///
+/// It has to be noted that CMake target still renders the README.md file
+/// as main page if it is present in the project - when
+/// DOXYGEN_USE_MDFILE_AS_MAINPAGE is set.
+///
+/// If DOXYGEN_USE_MDFILE_AS_MAINPAGE is set then it is overriden by this
+/// section.
+///
+/// This should be on top of the file or in a separate file.
+///
+/// @section first_sec First section
+///
+/// Explanation for the first section.
+///
+/// @section second_sec Second section
+///
+/// Explanation for the second section.
+///
+/// @subsection second_sub_sec Second section's subsection
+///
+/// Explanation for the second subsection.
+///
+
 /**
 Component diagram for Command pattern
 

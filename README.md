@@ -82,6 +82,35 @@ EXTRACT_ANON_NSPACES   = YES
 ```
 Use `@includedbygraph` , `@hideincludedbygraph`, `@callgraph` and `@hidecallgraph` to control the graph preparation.
 
+## Main page recipe
+```
+///
+/// @mainpage Command Design Pattern Example
+/// Main page for the example
+///
+/// It has to be noted that CMake target still renders the README.md file
+/// as main page if it is present in the project - when
+/// DOXYGEN_USE_MDFILE_AS_MAINPAGE is set.
+///
+/// If DOXYGEN_USE_MDFILE_AS_MAINPAGE is set then it is overriden by this
+/// section.
+///
+/// This should be on top of the file or in a separate file.
+///
+/// @section first_sec_name First section
+///
+/// Explanation for the first section.
+///
+/// @section second_sec_name Second section
+///
+/// Explanation for the second section.
+///
+/// @subsection second_sub_sec_name Second section's subsection
+///
+/// Explanation for the second subsection.
+///
+```
+
 ## Useful Doxygen tags
 
 ### File

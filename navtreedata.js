@@ -28,6 +28,7 @@ var NAVTREE =
     [ "CppDocumentExample", "index.html", "index" ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
+    [ "Topics", "topics.html", "topics" ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],

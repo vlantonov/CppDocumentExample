@@ -107,28 +107,30 @@ $(document).ready(function(){initNavTree('create__command_8hpp_source.html','');
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span><a class="code hl_class" href="classReceiver.html">Receiver</a>;</div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="classCreateCommand.html">   18</a></span><span class="keyword">class </span><a class="code hl_class" href="classCreateCommand.html">CreateCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="classCommand.html">Command</a> {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_class" href="classCreateCommand.html">CreateCommand</a>(std::weak_ptr&lt;Receiver&gt; aReceiver, std::string_view aData);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="classCreateCommand.html#a1fe1511fda85fd326f7e066a95ed5e76">   37</a></span>  <a class="code hl_function" href="classCreateCommand.html#a1fe1511fda85fd326f7e066a95ed5e76">~CreateCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classCreateCommand.html#a5fc69a7f05c22c9aea02eba61dbdced8">execute</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="classCreateCommand.html#a61c1176a9498a28c0d981cb5b9bd3e91">   50</a></span>  std::weak_ptr&lt;Receiver&gt; <a class="code hl_variable" href="classCreateCommand.html#a61c1176a9498a28c0d981cb5b9bd3e91">mReceiver</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="classCreateCommand.html#ab87223e86bb0c1a534c73a25d48c54a7">   56</a></span>  std::string <a class="code hl_variable" href="classCreateCommand.html#ab87223e86bb0c1a534c73a25d48c54a7">mData</a>;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>};</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="classCreateCommand.html">   21</a></span><span class="keyword">class </span><a class="code hl_class" href="classCreateCommand.html">CreateCommand</a> : <span class="keyword">public</span> <a class="code hl_class" href="classCommand.html">Command</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <a class="code hl_class" href="classCreateCommand.html">CreateCommand</a>(std::weak_ptr&lt;Receiver&gt; aReceiver, std::string_view aData);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="classCreateCommand.html#a1fe1511fda85fd326f7e066a95ed5e76">   40</a></span>  <a class="code hl_function" href="classCreateCommand.html#a1fe1511fda85fd326f7e066a95ed5e76">~CreateCommand</a>() <span class="keyword">override</span> = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classCreateCommand.html#a5fc69a7f05c22c9aea02eba61dbdced8">execute</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="classCreateCommand.html#a61c1176a9498a28c0d981cb5b9bd3e91">   53</a></span>  std::weak_ptr&lt;Receiver&gt; <a class="code hl_variable" href="classCreateCommand.html#a61c1176a9498a28c0d981cb5b9bd3e91">mReceiver</a>;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="classCreateCommand.html#ab87223e86bb0c1a534c73a25d48c54a7">   59</a></span>  std::string <a class="code hl_variable" href="classCreateCommand.html#ab87223e86bb0c1a534c73a25d48c54a7">mData</a>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>};</div>
 </div>
-<div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Interface of method for command execution.</div><div class="ttdef"><b>Definition</b> command.hpp:18</div></div>
-<div class="ttc" id="aclassCreateCommand_html"><div class="ttname"><a href="classCreateCommand.html">CreateCommand</a></div><div class="ttdoc">Create Command.</div><div class="ttdef"><b>Definition</b> create_command.hpp:18</div></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="ttc" id="aclassCommand_html"><div class="ttname"><a href="classCommand.html">Command</a></div><div class="ttdoc">Interface of method for command execution.</div><div class="ttdef"><b>Definition</b> command.hpp:22</div></div>
+<div class="ttc" id="aclassCreateCommand_html"><div class="ttname"><a href="classCreateCommand.html">CreateCommand</a></div><div class="ttdoc">Create Command.</div><div class="ttdef"><b>Definition</b> create_command.hpp:21</div></div>
 <div class="ttc" id="aclassCreateCommand_html_a1fe1511fda85fd326f7e066a95ed5e76"><div class="ttname"><a href="classCreateCommand.html#a1fe1511fda85fd326f7e066a95ed5e76">CreateCommand::~CreateCommand</a></div><div class="ttdeci">~CreateCommand() override=default</div><div class="ttdoc">Overridden destructor.</div></div>
 <div class="ttc" id="aclassCreateCommand_html_a5fc69a7f05c22c9aea02eba61dbdced8"><div class="ttname"><a href="classCreateCommand.html#a5fc69a7f05c22c9aea02eba61dbdced8">CreateCommand::execute</a></div><div class="ttdeci">void execute() override</div><div class="ttdoc">Specific action to be executed.</div><div class="ttdef"><b>Definition</b> create_command.cpp:11</div></div>
-<div class="ttc" id="aclassCreateCommand_html_a61c1176a9498a28c0d981cb5b9bd3e91"><div class="ttname"><a href="classCreateCommand.html#a61c1176a9498a28c0d981cb5b9bd3e91">CreateCommand::mReceiver</a></div><div class="ttdeci">std::weak_ptr&lt; Receiver &gt; mReceiver</div><div class="ttdoc">Object to delegate complex data operations.</div><div class="ttdef"><b>Definition</b> create_command.hpp:50</div></div>
-<div class="ttc" id="aclassCreateCommand_html_ab87223e86bb0c1a534c73a25d48c54a7"><div class="ttname"><a href="classCreateCommand.html#ab87223e86bb0c1a534c73a25d48c54a7">CreateCommand::mData</a></div><div class="ttdeci">std::string mData</div><div class="ttdoc">Context data.</div><div class="ttdef"><b>Definition</b> create_command.hpp:56</div></div>
-<div class="ttc" id="aclassReceiver_html"><div class="ttname"><a href="classReceiver.html">Receiver</a></div><div class="ttdoc">Interface to business logic.</div><div class="ttdef"><b>Definition</b> receiver.hpp:20</div></div>
+<div class="ttc" id="aclassCreateCommand_html_a61c1176a9498a28c0d981cb5b9bd3e91"><div class="ttname"><a href="classCreateCommand.html#a61c1176a9498a28c0d981cb5b9bd3e91">CreateCommand::mReceiver</a></div><div class="ttdeci">std::weak_ptr&lt; Receiver &gt; mReceiver</div><div class="ttdoc">Object to delegate complex data operations.</div><div class="ttdef"><b>Definition</b> create_command.hpp:53</div></div>
+<div class="ttc" id="aclassCreateCommand_html_ab87223e86bb0c1a534c73a25d48c54a7"><div class="ttname"><a href="classCreateCommand.html#ab87223e86bb0c1a534c73a25d48c54a7">CreateCommand::mData</a></div><div class="ttdeci">std::string mData</div><div class="ttdoc">Context data.</div><div class="ttdef"><b>Definition</b> create_command.hpp:59</div></div>
+<div class="ttc" id="aclassReceiver_html"><div class="ttname"><a href="classReceiver.html">Receiver</a></div><div class="ttdoc">Interface to business logic.</div><div class="ttdef"><b>Definition</b> receiver.hpp:24</div></div>
 <div class="ttc" id="acommand_8hpp_html"><div class="ttname"><a href="command_8hpp.html">command.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

@@ -8,7 +8,7 @@ var searchData=
   ['command_5',['Command',['../classCommand.html',1,'']]],
   ['command_20pattern_20references_6',['Command Pattern References',['../index.html#autotoc_md27',1,'']]],
   ['command_2ehpp_7',['command.hpp',['../command_8hpp.html',1,'']]],
-  ['commands_8',['commands',['../classInvoker.html#af4ba4c68d2e4018f9850f07bdc9f6d74',1,'Invoker']]],
+  ['commands_8',['commands',['../classInvoker.html#af4ba4c68d2e4018f9850f07bdc9f6d74',1,'Invoker::commands'],['../group__group__command.html',1,'Commands']]],
   ['compiler_20flags_9',['Clang Compiler flags',['../index.html#autotoc_md17',1,'']]],
   ['container_5freceiver_2ecpp_10',['container_receiver.cpp',['../container__receiver_8cpp.html',1,'']]],
   ['container_5freceiver_2ehpp_11',['container_receiver.hpp',['../container__receiver_8hpp.html',1,'']]],

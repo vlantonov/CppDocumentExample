@@ -6,7 +6,8 @@ var indexSectionsWithContent =
   3: "acdegmoru~",
   4: "cm",
   5: "o",
-  6: "bclt"
+  6: "cir",
+  7: "bclt"
 };
 
 var indexSectionNames =
@@ -17,7 +18,8 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "related",
-  6: "pages"
+  6: "groups",
+  7: "pages"
 };
 
 var indexSectionLabels =
@@ -28,6 +30,7 @@ var indexSectionLabels =
   3: "Functions",
   4: "Variables",
   5: "Friends",
-  6: "Pages"
+  6: "Modules",
+  7: "Pages"
 };
 

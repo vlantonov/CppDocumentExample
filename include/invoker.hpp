@@ -5,6 +5,10 @@
 
 #include "command.hpp"
 
+/// @defgroup invoker_command Invokers
+/// @brief Invoker implementations
+/// @{
+
 ///
 /// @brief Sends requests to commands
 ///
@@ -33,3 +37,5 @@ class Invoker {
   /// @brief List of commands to be executed
   std::vector<std::shared_ptr<Command>> commands;
 };
+
+/// @}

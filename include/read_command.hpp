@@ -8,6 +8,9 @@
 class Receiver;
 class Element;
 
+/// @addtogroup group_command
+/// @{
+
 ///
 /// @brief Read Command
 /// Implements additional method to read stored Elements
@@ -36,3 +39,5 @@ class ReadCommand : public Command {
   /// Required for launching the receiver's methods.
   std::vector<Element> mReads;
 };
+
+/// @}

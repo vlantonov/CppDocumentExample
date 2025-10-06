@@ -8,6 +8,9 @@
 /// @author Vladislav Antonov
 /// @date 2025
 
+/// @addtogroup group_receiver
+/// @{
+
 ///
 /// @brief Implements multiple element storage.
 /// Container stores multiple ordered unique elements
@@ -52,3 +55,5 @@ class ContainerReceiver : public Receiver {
   /// @brief Elements container
   std::set<Element> mContainer;
 };
+
+/// @}

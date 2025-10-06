@@ -130,7 +130,7 @@ Use `@includedbygraph` , `@hideincludedbygraph`, `@callgraph` and `@hidecallgrap
 * `@param[out] <PARAM> <DESCR>` Output paramter of C-style function that returns multiple values
 * `@param[in, out] <PARAM> <DESCR>` Parameter used for both input and output in a C-style function.
 * `@tparam <PARAM> <DESCR>` Template type parameter
-* `@trhow <EXCEP-DESCR>` Specify exceptions that a function can throw
+* `@throw <EXCEP-DESCR>` Specify exceptions that a function can throw
 * `@pre <DESCR>` Pre conditions
 * `@post <DESCR>` Post conditions
 * `@return <DESCR>` Description of return value or type.

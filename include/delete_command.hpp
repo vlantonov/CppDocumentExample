@@ -7,6 +7,9 @@
 
 class Receiver;
 
+/// @addtogroup group_command
+/// @{
+
 ///
 /// @brief Delete Command
 ///
@@ -37,3 +40,5 @@ class DeleteCommand : public Command {
   /// @see Element
   Element mDeleteData;
 };
+
+/// @}

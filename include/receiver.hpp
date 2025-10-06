@@ -5,6 +5,10 @@
 
 class Element;
 
+/// @defgroup group_receiver Receivers
+/// @brief Receiver implementations
+/// @{
+
 ///
 /// @brief Interface to business logic
 ///
@@ -41,3 +45,5 @@ class Receiver {
   /// @return True if element is successfully removed
   virtual bool remove(const Element& aRemoved) = 0;
 };
+
+/// @}

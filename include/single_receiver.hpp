@@ -5,6 +5,9 @@
 #include "element.hpp"
 #include "receiver.hpp"
 
+/// @addtogroup group_receiver
+/// @{
+
 ///
 /// @brief Implements single element storage.
 ///
@@ -21,3 +24,5 @@ class SingleReceiver : public Receiver {
   /// @brief Stored element
   std::optional<Element> mStored;
 };
+
+/// @}

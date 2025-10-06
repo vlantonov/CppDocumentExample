@@ -6,6 +6,9 @@
 
 class Receiver;
 
+/// @addtogroup group_command
+/// @{
+
 ///
 /// @brief Create Command
 ///
@@ -55,3 +58,5 @@ class CreateCommand : public Command {
   /// Required for launching the receiver's methods.
   std::string mData;
 };
+
+/// @}

@@ -7,6 +7,9 @@
 
 class Receiver;
 
+/// @addtogroup group_command
+/// @{
+
 ///
 /// @brief Update Command
 /// Implements additional method to update stored Elements
@@ -34,3 +37,5 @@ class UpdateCommand : public Command {
   /// Required for launching the receiver's methods.
   Element mUpdateData;
 };
+
+/// @}

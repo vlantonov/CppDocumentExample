@@ -1,5 +1,9 @@
 #pragma once
 
+/// @defgroup group_command Commands
+/// @brief Command implementations
+/// @{
+
 ///
 /// @brief Interface of method for command execution
 ///
@@ -32,3 +36,5 @@ class Command {
   /// unless overridden
   virtual void execute() = 0;
 };
+
+/// @}

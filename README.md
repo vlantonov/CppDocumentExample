@@ -225,6 +225,9 @@ doxygen_add_docs(docs_target
 
 ## Command Pattern References
 * plantUML diagram
+   * Supported in GitLab
+   * Rendered by Doxygen with PlantUML support
+   * Not supported in GitHub
 ```plantuml
 component Client
 component Invoker
@@ -254,6 +257,9 @@ Invoker -> Command : Initiate request
 ```
 
 * Mermaid diagram
+   * Supported in GitLab
+   * Not supported by Doxygen
+   * Supported in GitHub
 ```mermaid
 classDiagram
 
